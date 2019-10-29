@@ -1,0 +1,8 @@
+@charset "utf8";
+/*site color*/
+	body{background-color:skyblue}
+	h3{color:purple;}
+	hr{
+		/*boreder-width:5px; */
+		border:5px solid yellow}
+	span{color:blue;font-size:20px;}
