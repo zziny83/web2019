@@ -1,8 +1,8 @@
 @charset "utf8";
 /*site color*/
-	body{background-color:skyblue}
+	body{background-color:#CEF6D8}
 	h3{color:purple;}
 	hr{
 		/*boreder-width:5px; */
-		border:5px solid yellow}
+		border:5px solid #01DFD7}
 	span{color:blue;font-size:20px;}
