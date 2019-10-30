@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>style</title>
+	<style>
+		/*.box > ul > li > strong{color:red;}*/
+		/*.box ul strong{color:red;}*/
+		/*.box > div > strong{color:blue;}*/
+		.box div strong{color:blue;}
+		/*ul.menu strong{color:pink;}*/
+		.box > div:first-letter{color:red;}
+		ul.menu > li:hover{background-color:skyblue;color:red;font-weight:bold;}
+		ul.menu > li:active{background-color:red;}
+		/* div{background-color:blue;margin:10px;}
+		div.box,p.box{background-color:skyblue;}
+		p.box{background-color:skyblue;}
+		div#vbox{background-color:pink;} */
+	</style>
+</head>
+<body>
+	<!-- <div>Lorem ipsum dolor sit amet.</div>
+	<div class="box">Lorem ipsum dolor sit amet.</div>
+	<div class="box">Lorem ipsum dolor sit amet.</div>
+	<div id="vbox" class="box" style="background-color:red">Lorem ipsum dolor sit amet.</div>
+	<p class="box">Lorem ipsum dolor sit amet.</p> -->
+	<div class="box">
+		<div>Lorem <strong>ipsum dolor</strong> sit amet.</div>
+		<!-- ul>li*3{title$} -->
+		<ul class="menu">
+			<li>title1</li>
+			<li><strong>title2</strong></li>
+			<li>title3</li>
+		</ul>
+		<div>Lorem ipsum dolor sit amet.</div>
+	</div>
+	<hr>
+	<ul>
+		<li>title1</li>
+		<li><strong>title2</strong></li>
+		<li>title3</li>
+	</ul>
+
+	<style>
+		*{margin:0px;}
+		a{
+			text-decoration:none;
+			/*text-align:center;*/
+			/*display:block;*/
+			background-color:#0ff;
+		}
+		a:link,a:visited{color:black;}
+		a:hover{color:skyblue;}
+		h3{background-color:#ff0;text-align:center;}
+
+	</style>
+	<h3>
+		<a href="#">menu</a>
+	</h3>
+
+</body>
+</html>
