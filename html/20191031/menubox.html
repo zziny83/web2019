@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>munebar</title>
+	<style>
+		*{margin:0; padding:0;}
+		li{list-style:none;}
+		div.con_wrap{background-color:#32BEBE;}	
+		div.wrap{
+			width:1000px;
+			height:50px;
+			margin:0 auto;
+		}
+		div.wrap > ul:after{content:"";display:block;clear:both;} 
+		/*float쓸경우 clear=both꼭 명시*/ 
+		div.wrap > ul >li{float:left; width:200px;background-color:#FFC314;
+			text-align:center;
+			line-height:50px;}
+
+		div.wrap > ul > li:hover{background-color:#5CEEE6;font-weight:bold;}
+
+
+		a{text-decoration:none;}
+		a:link,a:visited{color:#fff; font-weight:bold;}
+
+		
+		div.container{background-color:#ff1f45;}
+		div.wrapper{width:1000px;height:50px;
+			margin:0 auto;}
+
+		div.wrapper > ul:after{content:"";display:block;clear:both;}
+
+	
+		div.wrapper > ul > li{float:left;width:20%;}
+		div.wrapper > ul > li{background-color:#F06E6E; height:50px;}
+		
+		div.wrapper > ul > li > a{display:block;text-align:center;line-height:50px;color:yellow;}
+		
+
+
+	</style>
+</head>
+<body>
+
+	<div class="con_wrap">
+		<div class="wrap">
+			<ul>
+				<li>menu1</li>
+				<li>menu2</li>
+				<li>menu3</li>
+				<li>menu4</li>
+				<li>menu5</li>
+			</ul>
+		</div>
+	</div>
+	
+
+
+	<div class="container">
+		<div class="wrapper">
+			<ul>
+				<li><a href="#">MUNE1</a></li>
+				<li><a href="#">MUNE2</a></li>
+				<li><a href="#">MUNE3</a></li>
+				<li><a href="#">MUNE4</a></li>
+				<li><a href="#">MUNE5</a></li>
+			</ul>
+		</div>
+	</div>
+
+	
+</body>
+</html>

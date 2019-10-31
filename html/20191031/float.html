@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>float</title>
+	<style>
+		*{margin:0; padding:0;}
+		li{list-style:none;}
+		ul{background-color:pink; 
+			width:600px;}
+	/*	ul:after{content:""; display:block; clear:both;}*/
+		ul > li{
+			float: left;
+			width:100px;
+			height:100px;
+			background-color:skyblue;
+		}
+	
+
+	</style>
+	<style>
+		.wrap{
+			width:610px;
+			/*height:100px;*/
+			background-color:red;
+		}
+		.box{
+			width:300px;
+			height:500px;
+			background-color:blue;
+			float:left;
+		}
+		.clearfix:after{
+			content:"";
+			display:block;
+			clear:both;}
+		/*.nobox{clear: both;}*/
+	</style>
+</head>
+<body>
+	<ul class="clearfix">
+		<li>test1</li>
+		<li>test2</li>
+		<li>test3</li>
+		<li>test4</li>
+		<li>test5</li>
+	</ul>
+
+	
+
+	<div class="wrap clearfix">
+		<div class="box">box</div>
+		<div class="box">box</div>
+		<!-- <div class="nobox"></div> -->
+	</div>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat vitae dignissimos laudantium eos veritatis molestiae quasi culpa assumenda sunt architecto et numquam delectus ipsam dolores magnam, fugit iure. Dolor, impedit!</p>
+
+	<style>
+		div.boxafter{background-color:gray;}
+		div.boxafter:after{content:"안녕하세요";}
+		div.boxafter:before{content:"정진희";}
+	</style>
+
+	<div class="boxafter">
+		<h1>Lorem.</h1>
+		<p>test</p>
+	</div>
+
+</body>
+</html>

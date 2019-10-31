@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>float menu</title>
+	<style>
+		*{margin: 0;padding: 0;}
+		li{list-style:none;}
+
+
+		div.container{background-color: #ff1f45;}
+		div.wrap{
+			width:800px; 
+			height:50px;
+			/*background-color:#7d57fc;*/
+			margin:0 auto;
+		}
+		div.wrap > ul:after{content:""; display:block; clear:both;}
+		div.wrap > ul > li{float:left; width:160px;
+		/*background-color:#FFC314;*/
+		text-align:center;
+		line-height: 50px;cursor:pointer;
+		color:#fff;}
+	div.wrap > ul > li:hover{background-color:#5CEEE6;color:#008080;}
+	/*div.wrap > div{w}*/
+
+	a{text-decoration:none;}
+	a:link,a:visited{color:black;}
+
+	div.con_wrap{background-color:black;}
+	div.wrapper{
+		width: 800px; height: 50px;
+		margin:0 auto;
+	}
+	div.wrapper > ul:after{content:"";clear:both;disply:block;}
+	div.wrapper > ul > li{float:left;width:20%;}
+	div.wrapper > ul > li:nth-child(2n){background-color: #f00;}
+	div.wrapper > ul > li:nth-child(2n+1){background-color: #0f0;}
+	
+	div.wrapper > ul > li > a{display:block;text-align:center;
+		line-height:50px; color:white;}
+	div.wrapper > ul > li > a:hover{background-color:white; color:black;}
+	</style>
+</head>
+<body>
+	
+	
+	<div class="container">
+		<div class="wrap">
+			<ul>
+				<li>menu1</li>
+				<li>menu2</li>
+				<li>menu3</li>
+				<li>menu4</li>
+				<li>menu5</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="con_wrap">
+		<div class="wrapper">
+			<!-- ul>li*5>a[#]>{MENU$} -->
+			<ul>
+				<li><a href="#">MENU1</a></li>
+				<li><a href="#">MENU2</a></li>
+				<li><a href="#">MENU3</a></li>
+				<li><a href="#">MENU4</a></li>
+				<li><a href="#">MENU5</a></li>
+			</ul>
+		</div>
+	</div>
+
+
+</body>
+</html>
