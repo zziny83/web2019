@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>homepage</title>
+</head>
+	<style>
+		*{margin: 0;padding: 0;}
+		li{list-style:none;}
+		a{text-decoration: none}
+		a:link,a:visited{color:black;}
+
+		header#hd{width:1000px;height: 100px;
+			margin:0 auto; background-color: #D5C2EE;position: relative;
+		}
+		#hd > h1{width: 100px;height: 60px;
+			margin:0 auto;
+			line-height:60px;text-align:center;}
+
+		nav.navbar{width: 1000px;background-color: #C73399; position: absolute; bottom:0;}
+		nav.navbar>ul:after{content:"";clear:both;display:block;}
+		nav.navbar>ul>li{float:left;width: 200px;}
+		nav.navbar>ul>li>a{display:block;text-align:center; line-height:40px;}
+		nav.navbar>ul>li>a:hover{background-color: #3BE0CB;color: #800000; font-weight:bold;}
+
+		div.container{height: 600px;background-color:#DCFFDC;}
+
+
+
+	</style>
+
+
+<body>
+	<header id="hd">
+		<h1>ZZIN</h1>
+		<nav class="navbar">
+			<ul>
+				<li><a href="#">menu1</a></li>
+				<li><a href="#">menu2</a></li>
+				<li><a href="#">menu3</a></li>
+				<li><a href="#">menu4</a></li>
+				<li><a href="#">menu5</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div class="container"></div>
+
+
+
+	
+</body>
+</html>
