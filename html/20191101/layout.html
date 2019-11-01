@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>layout</title>
+	<style>
+		/*css reser*/
+		*{margin: 0;padding:0;}
+		li{list-style: none;}
+		a{text-decoration: none}
+		a:link,a:visited{color: black;}
+
+		/*header*/
+		header#hd{width:1000px;height: 100px;
+			margin:0 auto; background-color: skyblue;
+			position: relative;
+		}
+		#hd > h1{
+			_background-color:blue;width:100px;height: 50px;
+			margin:0 auto;text-align:center; line-height:50px;}
+		nav.navbar{width: 1000px;background-color: yellow;position: absolute;bottom:0;left:;}
+		nav.navbar>ul:after{content:"";clear: both;display: block;}
+		nav.navbar>ul>li{float: left; width:200px; }
+		nav.navbar>ul>li>a{display:block;text-align:center;
+					line-height:40px;}
+		nav.navbar>ul>li>a:hover{background-color: gray; color:white;}
+
+
+		/*slider area*/
+		div.container{height: 400px;background-color: #ddd;}
+
+
+	</style>
+</head>
+<body>
+	<header id="hd">
+		<h1>LOGO</h1>
+		<nav class="navbar">
+			<ul>
+				<li><a href="">menu1</a></li>
+				<li><a href="">menu2</a></li>
+				<li><a href="">menu3</a></li>
+				<li><a href="">menu4</a></li>
+				<li><a href="">menu5</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div class="container"></div>
+	
+</body>
+</html>
