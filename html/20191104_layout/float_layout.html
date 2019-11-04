@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>문서 제목</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<style>
+		header#hdWrap{
+			width: 1000px;height: 50px;
+			background-color:skyblue; margin:0 auto;
+		}
+		#hdWrap:after{content:"";clear: both;display: block;}
+		#hdWrap>h1{width: 120px; line-height:50px;float:left; text-align:center;}
+		#hdWrap>nav.navWrap{width: 800px;float:right;}
+
+		nav.navWrap>ul:after{content:"";display: block;clear: both;}
+		nav.navWrap>ul>li{float: left;width:160px;}
+		nav.navWrap>ul>li>a{display: block;text-align:center;
+			line-height:50px;}
+		nav.navWrap>ul>li>a:hover{background-color: #ccc;}
+	</style>
+</head>
+<body>
+	<header id="hdWrap">
+		<h1>LOGO</h1>
+		<nav class="navWrap">
+			<ul>
+				<li><a href="#">MENU1</a></li>
+				<li><a href="#">MENU2</a></li>
+				<li><a href="#">MENU3</a></li>
+				<li><a href="#">MENU4</a></li>
+				<li><a href="#">MENU5</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+</body>
+</html>

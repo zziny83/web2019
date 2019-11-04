@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>layout</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<style>
+		/*header*/
+		#headerWrap{background-color: gray;}
+		header#hdWrap{
+			width:1000px;
+			height:120px;
+			margin:0 auto;
+			background-color: orange;
+			position: relative;}
+		#hdWrap>h1{
+			width: 150px;
+			height: 50px;
+			background-color:blue;
+			margin: 0 auto;
+			text-align:center;}
+
+		nav.navWrap{position: absolute; bottom:0;}
+		nav.navWrap>ul:after{content:"";display:block; clear:both;}
+		nav.navWrap>ul>li{float:left; width:200px;}
+		nav.navWrap>ul>li>a{background-color:#ccc; display: block;line-height: 40px; text-align:center;}
+
+		/*visual*/
+		div.visual{height: 400px;background-color:skyblue;}
+		
+		/*section*/
+		section#container{height: 800px;width: 1000px;background-color: #ccc;margin:0 auto;}
+
+		/*footer*/
+		footer#footerWrap{height:130px;width: 1000px;background-color: #000;margin:0 auto;}
+
+
+	</style>
+</head>
+
+<body>
+	<div id="headerWrap">
+		<header id="hdWrap">
+			<H1>LOGO</H1>
+			<nav class="navWrap">
+				<ul>
+					<li><a href="#">MENE1</a></li>
+					<li><a href="#">MENE2</a></li>
+					<li><a href="#">MENE3</a></li>
+					<li><a href="#">MENE4</a></li>
+					<li><a href="#">MENE5</a></li>
+				</ul>
+			</nav>
+		</header>
+	</div>
+	<div class="visual"></div>
+
+	<section id="container"></section>
+	<footer id="footerWrap"></footer>
+
+	
+</body>
+</html>
