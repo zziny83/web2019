@@ -5,7 +5,12 @@
 	<meta charset="UTF-8">
 	<title>layout</title>
 	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
 	<style>
+		img{display: block;width:100%;}
 		/*header*/
 		#headerWrap{background-color: gray;}
 		header#hdWrap{
@@ -27,7 +32,11 @@
 		nav.navWrap>ul>li>a{background-color:#ccc; display: block;line-height: 40px; text-align:center;}
 
 		/*visual*/
-		div.visual{height: 400px;background-color:skyblue;}
+		div.visual{
+			background-color:skyblue;
+			/*width: 1200px;
+			margin:0 auto;*/
+		}
 		
 		/*section*/
 		section#container{height: 800px;width: 1000px;background-color: #ccc;margin:0 auto;}
@@ -35,8 +44,27 @@
 		/*footer*/
 		footer#footerWrap{height:130px;width: 1000px;background-color: #000;margin:0 auto;}
 
+		.bx-wrapper {
+    		-moz-box-shadow: none;
+     		-webkit-box-shadow: none; 
+    		 box-shadow: none; 
+    		 border: none;
+    		 margin-bottom: 0px; 
+		}
+		.bx-wrapper .bx-pager{
+			bottom:30px;}
+
 
 	</style>
+	<script>
+		$(document).ready(function(){
+			$(".slider").bxSlider({auto:true,controls:false});
+
+		});
+
+	
+		
+	</script>
 </head>
 
 <body>
@@ -54,7 +82,13 @@
 			</nav>
 		</header>
 	</div>
-	<div class="visual"></div>
+	<div class="visual">
+		<div class="slider">
+			<div><img src="../images/pc01.jpg" alt=""></div>
+			<div><img src="../images/pc02.jpg" alt=""></div>
+			<div><img src="../images/pc03.jpg" alt=""></div>
+		</div>
+	</div>
 
 	<section id="container"></section>
 	<footer id="footerWrap"></footer>

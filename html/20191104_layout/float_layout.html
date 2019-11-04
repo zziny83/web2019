@@ -3,10 +3,15 @@
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta charset="UTF-8">
-	<title>문서 제목</title>
+	<title>float_LAYOUT</title>
 	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
 	<style>
-		header#hdWrap{
+		img{display: block;width:1200px;margin:0 auto;}
+		/*header#hdWrap{
 			width: 1000px;height: 50px;
 			background-color:skyblue; margin:0 auto;
 		}
@@ -18,8 +23,48 @@
 		nav.navWrap>ul>li{float: left;width:160px;}
 		nav.navWrap>ul>li>a{display: block;text-align:center;
 			line-height:50px;}
-		nav.navWrap>ul>li>a:hover{background-color: #ccc;}
+		nav.navWrap>ul>li>a:hover{background-color: #ccc;}*/
+
+		header#hdWrap{width: 1000px; height: 50px;margin:0 auto;
+			background-color: #ccc;}
+		header#hdWrap:after{content:"";clear: both;display: block;}
+
+		#hdWrap > h1{width: 120px;float: left;
+					line-height:50px;text-align:center;}
+					
+		nav.navWrap{width:800px;float:right;}
+		nav.navWrap>ul:after{content:"";clear:both; display:block;}
+		nav.navWrap>ul>li{float: left;width:160px;}
+		nav.navWrap>ul>li>a{text-align:center;line-height: 50px; display: block;	}
+		nav.navWrap>ul>li>a:hover{background-color: #00f;color:white;}
+
+		div.visual{background-color:skyblue;}
+
+		.bx-wrapper {
+    		-moz-box-shadow: none;
+    		-webkit-box-shadow: none;
+    		box-shadow: none;
+    		border: none ;
+    		margin-bottom: 0px
+    		}
+		.bx-wrapper .bx-pager
+			{bottom:30px}
+
+
+
+
 	</style>
+	<script>
+		$(document).ready(function(){
+			$(".slider").bxSlider();
+		});
+			
+		$(document).ready(function(){
+			$(".sliderOne").bxSlider();
+		});
+
+		
+	</script>
 </head>
 <body>
 	<header id="hdWrap">
@@ -34,6 +79,18 @@
 			</ul>
 		</nav>
 	</header>
+	<div class="visual">
+		<div class="slider">
+			<div><img src="../images/pc01.jpg" alt=""></div>
+			<div><img src="../images/pc02.jpg" alt=""></div>
+			<div><img src="../images/pc03.jpg" alt=""></div>
+		</div>
+		<div class="sliderOne">
+			<div><img src="../images/images01.jpg" alt=""></div>
+			<div><img src="../images/images02.jpg" alt=""></div>
+			<div><img src="../images/images03.jpg" alt=""></div>
+		</div>
+	</div>
 	
 </body>
 </html>
