@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>bxslider</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<!-- script:src -->
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".slider").bxSlider({auto:true});
+		});
+	</script>
+	<style>
+		.slider img{width: 100%;}
+		.bx-wrapper {
+   	 	-moz-box-shadow:none;
+    	-webkit-box-shadow:none;
+    	box-shadow:none;
+   		border:none;
+    	background: #fff;
+    	 margin-bottom: 0px;
+		}
+		.bx-wrapper .bx-pager {
+   		bottom: 30px;
+		}
+	</style>
+</head>
+<body>
+	<div class="visual">
+		<ul class="slider">
+			<li><img src="images/pc01.jpg" alt="이미지1"></li>
+			<li><img src="images/pc02.jpg" alt="이미지2"></li>
+			<li><img src="images/pc03.jpg" alt="이미지3"></li>
+			
+		
+		</ul>
+	</div>
+
+	
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>문서 제목</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".slider").bxSlider({auto:true});
+		});
+	</script>
+
+
+	<style>
+		img{display: block;width:1200px;margin:0 auto;}
+		
+		.bx-wrapper {
+    	-moz-box-shadow: none;
+    	-webkit-box-shadow: none;
+   	 	box-shadow: none;
+    	border: none;
+    	background: #fff;
+    	margin-bottom: 0;
+		}
+
+		.bx-wrapper .bx-pager {
+    	   	 	bottom: 30px;}
+
+		header#hd{width: 1000px;height: 50px;margin:0 auto;background-color: #ff0;}
+		header#hd:after{content:"";clear: both;display: block;}
+
+		#hd > h1{float: left; width: 120px; line-height:50px; text-align:center;}
+		nav.navWrap{width: 800px; float: right;}
+
+		nav.navWrap>ul:after{content:"";display: block;clear: both;}
+		nav.navWrap>ul>li{width: 160px;float: left;}
+		nav.navWrap > ul>li>a{display: block; text-align:center;line-height: 50px;}
+		nav.navWrap > ul>li>a:hover{background-color: #00f;color:white;}
+
+
+
+	</style>
+</head>
+	
+
+<body>
+	<header id="hd">
+		<h1>LOGO</h1>
+		<nav class="navWrap">
+			<ul>
+				<li><a href="#">MENU1</a></li>
+				<li><a href="#">MENU2</a></li>
+				<li><a href="#">MENU3</a></li>
+				<li><a href="#">MENU4</a></li>
+				<li><a href="#">MENU5</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div class="visual">
+		<ul class="slider">
+			<li><img src="images/pc01.jpg" alt="이미지1"></li>	
+			<li><img src="images/pc02.jpg" alt="이미지2"></li>	
+			<li><img src="images/pc03.jpg" alt="이미지3"></li>	
+		</ul>
+	</div>
+
+</body>
+</html>
