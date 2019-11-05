@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>background</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<style>
+		body{
+			background-image:url(../images/pc01.jpg);
+			background-repeat:no-repeat; /*repeat-x | repeat-y*/
+			background-position:10px 100px; /*center;*/
+		}
+		.logo{
+			width: 120px;height: 30px;
+			}
+		.logo >h1 {
+			height:30px;
+			font-size:1em ;
+			background-image: url(../images/naver.png);
+			background-repeat:no-repeat;
+		}
+		.logo>h1>a{display: block;line-height:30px; text-align:center;
+			text-indent:-9999px;}
+
+		.button, .buttonTwo{background-image:url(../images/naver.png);}
+		.button{width:56px;height:20px;
+			/*background-image:url(../images/naver.png);*/
+			background-position:-124px 0px;
+			text-indent:-9999px;
+		}
+		.button:hover{
+			background-position:-124px -23px;
+		}
+
+		.buttonTwo{
+			width: 48px;height: 20px;
+			/*background-image:url(../images/naver.png);*/
+			background-position:-182px 0px;
+			text-indent:-9999px;
+		}
+		.buttonTwo:hover{
+			background-position:-182px -46px;
+		}
+		
+		.bgtest{
+			width: 200px;height: 200px;
+			/*background-image:url(../images/apple.png);
+			background-repeat:no-repeat;
+			background-position: 50%;
+			background-color: #ccc;
+			background-size:cover;*/
+			background:#ccc url(../images/apple.png) repeat-x center;
+
+		}
+
+	</style>
+</head>
+<body>
+	<div class="logo">
+		<h1><a href="#">네이버</a></h1>
+	</div>
+	
+	<div class="button">
+		지식백과
+		</div>
+	<div class="buttonTwo">
+		지식in
+	</div>
+	<div class="bgtest"></div>
+
+	<!-- <style>
+		.nav ul li{background-image:url(../images/sprites.png);}
+		.nav ul li:nth-child(1){background-position:0 0;}
+		.nav ul li:nth-child(2){background-position:0 0;}
+		.nav ul li:nth-child(3){background-position:0 0;}
+		.nav ul li:nth-child(4){background-position:0 0;}
+		.nav ul li:nth-child(5){background-position:0 0;}
+		.nav ul li:nth-child(6){background-position:0 0;}
+		.nav ul li:nth-child(7){background-position:0 0;}
+	</style>
+
+	<div class="nav">
+		<ul>
+			<li><a href="#">menu1</a></li>
+			<li><a href="#">menu2</a></li>
+			<li><a href="#">menu3</a></li>
+			<li><a href="#">menu4</a></li>
+			<li><a href="#">menu5</a></li>
+			<li><a href="#">menu6</a></li>
+			<li><a href="#">menu7</a></li>
+		</ul>
+	</div> -->
+
+</body>
+</html>

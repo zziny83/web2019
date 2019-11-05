@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>문서 제목</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../bxslider/css/jquery.bxslider.css">
+	
+	<script src="../bxslider/js/jquery-3.1.1.min.js"></script>
+	<script src="../bxslider/js/jquery.bxslider.js"></script>
+
+	<script>
+		$(document).ready(function(){
+			$(".slider").bxSlider({auto:true});
+		});
+	</script>
+	
+
+	<style>
+
+
+		.slider img{width: 100%;}
+		header#hdWrap{width: 1000px; height: 120px; background-color: #0ff;
+			margin:0 auto; position: relative; }
+
+		#hdWrap > h1{width: 120px;line-height:100px; text-align:center;}
+
+		nav.Wrap{position:absolute;width: 400px;background-color: #ff0;
+			top:0;right:0;}
+		nav.Wrap > ul:after{content:"";display: block;clear: both;}
+		nav.Wrap > ul>li{
+			width: 100px;height: 80px;float: left;
+			background-image:url(../images/bottom_gnb.png);
+		}
+		.Wrap ul li:nth-child(1){background-position:0px 0px;}
+		.Wrap ul li:nth-child(1):hover{background-position:0px -800px;}
+		.Wrap ul li:nth-child(2){background-position:0px -80px;}
+		.Wrap ul li:nth-child(2):hover{background-position:0px -880px;}
+		.Wrap ul li:nth-child(3){background-position:0px -160px;}
+		.Wrap ul li:nth-child(3):hover{background-position:0px -960px;}
+		.Wrap ul li:nth-child(4){background-position:0px -240px;}
+		.Wrap ul li:nth-child(4):hover{background-position:0px -1040px;}
+		
+
+		nav.Wrap > ul>li>a{
+			display: block;text-align:center; 
+			line-height:40px;text-indent:-9999px;
+		}
+		/*nav.Wrap > ul>li>a:hover{background-color: #ccc;color:white;}*/
+
+
+
+		nav.Warpbar{position:absolute;_background-color: #f05; right:0; bottom:0;} 
+		nav.Warpbar>ul:after{content:"";display: block;clear: both;}
+		nav.Warpbar>ul>li{
+			width: 160px; height: 40px;float: left;
+			border-right:1px solid #000;
+			box-sizing:border-box;
+		}
+		/*nav.Warpbar>ul>li:first-child{border-left:1px solid #000 ;}*/
+		nav.Warpbar>ul>li:last-child{border-right:none}
+		nav.Warpbar>ul>li>a{display: block; text-align:center; line-height:40px;}
+		nav.Warpbar>ul>li>a:hover{background-color: #C0FFFF;color:	#3C5A91;font-weight:bold;}
+
+		.bx-wrapper {
+   		-moz-box-shadow: none;
+   		-webkit-box-shadow: none;
+   		box-shadow: none;
+    	border: none;
+    	background: #fff;
+    	margin-bottom: 0;}
+
+    	.bx-wrapper .bx-pager{
+   		 bottom: 30px;}
+
+
+	</style>
+	
+	
+
+
+</head>
+<body>
+	<header id="hdWrap">
+		<h1>LOGO</h1>
+		<nav class="Wrap">
+			<ul>
+				<li><a href="#">home1</a></li>
+				<li><a href="#">home2</a></li>
+				<li><a href="#">home3</a></li>
+				<li><a href="#">home4</a></li>
+			</ul>
+		</nav>
+		<nav class="Warpbar">
+			<ul>
+				<li><a href="#">menu1</a></li>
+				<li><a href="#">menu2</a></li>
+				<li><a href="#">menu3</a></li>
+				<li><a href="#">menu4</a></li>
+				<li><a href="#">menu5</a></li>
+			</ul>
+		</nav>
+	</header>
+	<!-- <style>
+		.box{
+			width: 100px;height: 100px;
+			/*border-style:dotted;
+			border-width:1px;
+			border-color:black;*/
+			border-right:1px solid black;
+
+
+		}
+	</style>
+	<div class="box"></div> -->
+
+	<div class="visual">
+		<ul class="slider">
+			<li><img src="../images/pc01.jpg" alt="이미지1"></li>
+			<li><img src="../images/pc02.jpg" alt="이미지2"></li>
+			<li><img src="../images/pc03.jpg" alt="이미지3"></li>
+		</ul>
+	</div>
+	
+	
+</body>
+</html>
