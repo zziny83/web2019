@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>overflow</title>
+	<style>
+		.box1{
+			width: 200px;height: 300px;
+			background-color: #ff0;
+			/*overflow-y:scroll; */
+			overflow:auto; /*scroll | hidden | auto | visible*/
+		}
+		.box2{
+			width: 500px;height: 500px;
+			background-color: #00f;
+			position: relative;
+			overflow:hidden;
+		}
+
+		.box3{
+			width: 300px;height: 300px;
+			position: absolute;
+			right:-50px; 
+		}
+		.box2:hover .box3{/*right:30px;top:30px;*/display:none;}
+	</style>
+</head>
+<body>
+	<div class="box1">
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab placeat, cumque consequatur. Optio pariatur assumenda veniam praesentium quisquam! Impedit quasi ab odit delectus iste sint voluptatem porro necessitatibus itaque, a autem libero labore nulla voluptates quas perspiciatis culpa quaerat tempora ea in possimus, totam aperiam! Quod dolore nemo delectus perspiciatis ratione expedita laboriosam animi optio repellat exercitationem. Excepturi tempore quisquam quae laboriosam voluptatibus cumque vel, nemo, dignissimos voluptate iste esse nostrum, obcaecati, eligendi tenetur impedit adipisci soluta placeat voluptates aut eaque perferendis sed minus reprehenderit explicabo. Officiis, eligendi, repellendus quae, ad eius voluptates, saepe voluptas porro minus rem placeat quaerat.
+	</div>
+	<div class="box2">
+		<div class="box3"><img src="../images/testimg.jpg" alt=""></div>
+	</div>
+	
+</body>
+</html>
