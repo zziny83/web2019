@@ -1,59 +1,65 @@
 @charset "utf8";
 
 /*header*/
-
 header#main_header{}
-header#main_header>#main_util{
-	border-bottom:1px solid #ddd;
-}
-#util_menu{width: 980px;
-	margin:0 auto;
-}
-#util_menu ul.util_wrap{
-	float: right;}
+header#main_header>#main_util{border-bottom: 1px solid #ccc;}
+#util_menu{width: 980px;margin:0 auto;}
+#util_menu ul.util_wrap{float: right;}
 #util_menu ul.util_wrap li{
 	float: left;
 	position: relative;
-	
 }
 #util_menu ul.util_wrap li:after{
 	content:""; display: block;
-	width:1px; height: 10px;
+	width: 1px; height: 12px;
 	background-color: #ccc;
-	position: absolute; top:12px;
+	position: absolute; top:10px;
 }
+#util_menu ul.util_wrap li:first-child:after{
+	content:""; display: none;}
+
 #util_menu ul.util_wrap li a{
-	display: block; 
-	text-align:center;
-	line-height:30px;
-	padding: 0 15px;
-}
-header#main_header>h1{
-	width: 200px;
-	margin:15px auto;
-	text-align:center;
-	
-}
-
-#main_menu{background-color: #1d5da4;}
-#main_menu ul.menu_wrap{
-	width: 980px;
-	margin:0 auto;
-}
-#main_menu ul.menu_wrap li{
-	float: left;width:163.33333px;
-	border-right:1px solid #2867ad;
-}
-#main_menu ul.menu_wrap li:first-child{
-	border-left:1px solid #2867ad;
-}
-#main_menu ul.menu_wrap li a{
 	display: block; text-align:center;
-	line-height:45px; color:#fff;
+	line-height: 30px; padding: 0 20px;
+}
 
+#main_header h1{
+	width: 200px; margin:20px auto; 
 }
-#main_menu ul.menu_wrap li a:hover{
-	background-color:skyblue;
-	color:#1d5da4;
-	font-weight:bold;
+
+#main_menu{background-color: #1c5da3; height: 45px;}
+#main_menu ul.main_wrap{width: 980px;margin:0 auto;}
+#main_menu ul.main_wrap li{
+	float: left;width: 163.3333px;
+	border-right: 1px solid #2867ad;
 }
+#main_menu ul.main_wrap li:first-child{border-left: 1px solid #2867ad;}
+#main_menu ul.main_wrap li a{display: block; 
+	text-align:center; line-height: 45px; color:#fff;
+}
+#main_menu ul.main_wrap li a:hover{
+	background-color: #95c8ff;color:#1c5da3;
+	font-weight: bold;
+}
+
+
+
+/*visual icon*/
+#visual_wrap{
+	height: 400px;background:#203969 url(../images/visual_bg.jpg) no-repeat center;
+}
+#visual_wrap .visual{width: 980px; height: 400px;
+	margin:0 auto;position: relative;
+}
+#visual_wrap .visual img{position: absolute;}
+#visual_wrap .visual img.img01{right:0;}
+#visual_wrap .visual img.img02{left:0;top:80px;}
+
+
+#visual_icon{background-color: #eee;}
+#visual_icon .icon_wrap{width: 980px;margin:0 auto;}
+
+#visual_icon .icon_wrap ul li{float: left;width: 196px; height: 196px;}
+#visual_icon .icon_wrap ul li.card{float: left;}
+
+

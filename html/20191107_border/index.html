@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>after</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<style>
+		.box1{width: 300px;height: 200px;
+			background-color:pink;
+			margin: 0 auto;
+		}
+		.box1:before{content:"hi";} /*인라인태그*/
+		.box1 > p:after{content:"";display: block;width: 80px;
+				height: 3px;background-color:#fff;
+				margin-left:auto;margin-right: auto;
+				margin-top: 10px;
+				} /*자식요소<p>에서 맨 마지막에 배치된다.*/
+		.box1 > p{width: 160px;margin:0 auto;
+			text-align:center;
+			/*background-color: skyblue;*/
+		}
+		.nav{width: 1000px; _background-color: #ccc;
+			margin:0 auto;
+			}
+		/*.nav ul{overflow:hidden;} 지정된픽셀값에서 벗어나면 사라짐*/
+
+		.nav ul:after{content:"";clear: both;display: block;}
+		.nav ul li{float: left;width:166.67px;
+			position: relative;
+		}
+		.nav ul li:after{content:"";
+					display: block;width:1px; height: 15px;
+					background-color: #000;
+					position: absolute; top:15px; left:-1px;
+			}
+		.nav ul li:first-child:after{content:"";display: none;}
+		.nav ul li a{display: block;line-height: 40px;
+			text-align:center;
+		}
+		.box2{
+			width:200px;height: 30px; margin:0 auto;
+			background-color: #ff0;
+			/*border-right-style:solid;
+			border-width:1px;
+			border-color:#000;*/
+			border: 1px solid #000;
+			border-radius:15px; /*테두리 굴리는것*/ 
+			padding-left: 15px; padding-top: 3px;
+			box-sizing: border-box
+		}
+		.box3{
+			width: 200px;height: 200px;
+			margin: 0 auto;
+			background-color:pink;
+			border: 5px solid #000;
+			border-radius:100px; 
+			box-sizing:border-box;
+			overflow:hidden;
+
+		}
+		.box3 img{width: 100%; }
+
+	</style>
+</head>
+<body>
+	<div class="box1">
+		<p>Lorem ipsum dolor</p> <!-- 블럭단위요소 -->
+	</div>
+	<div class="nav">
+		<ul>
+			<li><a href="#">menu1</a></li>
+			<li><a href="#">menu2</a></li>
+			<li><a href="#">menu3</a></li>
+			<li><a href="#">menu4</a></li>
+			<li><a href="#">menu5</a></li>
+			<li><a href="#">menu6</a></li>
+		</ul>
+	</div>
+	<div class="box2">
+		Lorem.
+	</div>
+	<div class="box3">
+		<img src="../images/testimg.jpg" alt="">
+	</div>
+</body>
+</html>
