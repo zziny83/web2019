@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>문서 제목</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
+
+	<style>
+		#sec_wrap{
+			background: #558fce url(images/main_bg01.jpg) no-repeat center;
+		}
+		/*contant_wrap*/
+		#sec_wrap .con_wrap{
+			width: 1200px;height: 260px; margin:0 auto;
+			_background-color: #ccc;
+		}
+		#sec_wrap .con_wrap div.title{float: left;}
+		#sec_wrap .con_wrap div.con_icon{float: right;}
+		.title{width: 700px;padding-top:75px; color:#fff;}
+		.title span{font-size:2.5em;}
+		.title h1{font-size:3.5em;}
+
+
+		/*container_wrap*/
+		#sec_wrap .container_wrap{
+			width: 1200px; margin:0 auto;
+
+		}
+		#sec_wrap .container_wrap li{
+		float: left; height: 225px; width: 25%;
+
+		}
+		#sec_wrap .container_wrap li:nth-child(1){
+			height: 450px; width: 75%;background-color: #f00;
+		}
+		
+		#sec_wrap .container_wrap li:nth-child(2){
+			height: 450px; width: 25%;background: #a48533 url(images/배경03.jpg) no-repeat center; 
+
+		}
+
+		#sec_wrap .container_wrap li .title_banner{color:#fff;padding-left:35px; padding-top:90px ;}
+		#sec_wrap .container_wrap li .title_banner .tilte_app{font-size:2em; padding-bottom: 15px;}
+
+
+
+		#sec_wrap .container_wrap li:nth-child(3){background-color: #00163b;}
+		#sec_wrap .container_wrap li:nth-child(4){background-color: #1651b7;}
+		#sec_wrap .container_wrap li:nth-child(5){background-color: #fff;}
+		#sec_wrap .container_wrap li:nth-child(6){background-color: #8e96a2;}
+		#sec_wrap .container_wrap li:nth-child(7){
+			width: 25%;background-color: #8e96a2;}
+		#sec_wrap .container_wrap li:nth-child(8){
+			background-color: #ff4538;width: 75%;}
+
+		.bx-wrapper {
+    	-moz-box-shadow: none;
+   		 -webkit-box-shadow:  none;
+    	box-shadow: none;
+    	border:  none;
+   		background: #fff;}
+
+   		.bx-wrapper .bx-pager{
+   		    bottom: 30px;}
+
+
+		/*.slider01{position: relative; }*/
+		.slider01 div.tilte_text{
+			position: absolute; left:85px; top:90px;
+			color:#1651b7;
+			font-size:3.5em;}
+		.slider01 div.sd_bottom{ position: absolute; left:85px; top:330px;}
+
+		
+		/*commom*/
+		.mb10{margin-bottom:10px !important;}
+		.mb20{margin-bottom:20px !important;}
+		.mb30{margin-bottom:30px !important;}
+		a.btn{width: 200px;display: block; line-height: 40px; 
+			text-align: center; border: 1px solid #fff;
+			font-weight: bold; color:#fff;
+			background-color: rgba(0,0,0,0.5);
+			border-radius: 10px;
+			/*opacity:0.5; 안에있는 글씨까지 투명해짐.*/
+		}
+		a.btn:hover{background-color: rgba(0,0,0,1);}
+
+		a.btntwo{width: 200px;display: block; line-height: 40px; 
+			text-align: center; border: 1px solid #fff;
+			font-weight: bold; color:#fff;
+			background-color: rgba(20,40,70,0.9);
+			
+
+		
+	</style>
+
+	<script>
+		// $(document).ready(function(){});
+		$(document).ready(function(){
+			$(".slider01").bxSlider({auto:true});
+		});
+		$(document).ready(function(){
+			$(".slider02").bxSlider({auto:true});
+		});
+	</script>
+</head>
+<body>
+	<section id="sec_wrap">
+		<div class="con_wrap clearfix">
+			<div class="title">
+				<span>함께 나누며 세상을 이끌어</span>
+				<h1>세상을 향하는 한국대학교</h1>
+			</div>
+			<div class="con_icon">
+			</div>
+					
+		</div>
+		<div class="container_wrap">
+			<ul class="clearfix">
+				<li>
+					<div class="slider01">
+						<div><img src="images/main_slide_01.jpg" alt="대학모집">
+							<div class="tilte_text">
+								<p2><b>한국</b>에서<br>
+								<b>시작</b>하는<br>
+								새로운 <b>꿈</b>	
+								</p>
+							</div>
+							<div class="sd_bottom">
+								<a href="#" class="btntwo">자세히보기 ▶</a>
+							</div>
+						</div>
+						<div><img src="images/main_slide_02.jpg" alt="캠퍼스안내"></div>
+						<div><img src="images/main_slide_03.jpg" alt="교내운동장"></div>
+					</div>
+					
+				</li>
+				<li>
+					<div class="title_banner" >
+						<p class="tilte_app">
+							<b>APP</b>으로<br>
+							<b>스마트 도서관</b><br>
+							바로이용하자!	
+						</p>
+						<p class="mb30">
+							모바일 열람증은<br>
+							도서관 자료실/도서대출 등에<br>
+							사용할 수 있습니다.
+						</p>
+						<a href="#" class="btn">자세히보기 ▶</a>
+					</div>
+				</li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li>
+					<div class="slider02">
+						<div><img src="images/banner_slide_01.jpg" alt="편입생모집"></div>
+						<div><img src="images/banner_slide_02.jpg" alt="대학생활"></div>
+						<div><img src="images/banner_slide_03.jpg" alt="캠퍼스"></div>
+				
+					</div>
+				</li>
+			</ul>
+		</div>
+	</section>
+	
+</body>
+</html>
