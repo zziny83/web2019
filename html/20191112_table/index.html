@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>table</title>
+	<style>
+		table{
+			width: 400px;
+			/*border: 1px solid #000;*/
+			border-collapse:collapse;/*선이 두겹으로 되있는거 없애는것*/ 
+			border-top:2px solid #aaa;
+			border-bottom:2px solid #aaa;
+		}
+		table > caption{padding:0; font-size:0; line-height: 0;
+			display: none;
+			} /*캡셥에 있는 내용 지우기*/
+		table > thead{
+			border-bottom: 2px solid #aaa;
+			background-color: #bbb;
+		}
+		/*th, td{border: 1px solid #000;}*/
+		th{height: 40px;}
+		td{text-align:center; height:50px;}
+		table > tbody td{border-bottom: 1px solid #ccc; 
+			border-right:1px solid #ccc;
+		}
+		/*table > tbody > tr >td:last-child{border-right:none;}*/
+		table > tbody tr:nth-child(2n){background-color: #ddd;}
+		table > tbody tr:hover{background-color: #eee;}
+
+		.tdr{border-right:none;}
+
+	</style>
+</head>
+<body>
+	
+</body>
+	<table>
+		<col width="20%">
+		<col width="30%">
+		<col>
+		<thead>
+			<tr>
+				<th>subject1</th> <!--th로 지정하면 제목느낌으로 두껍게 표현됨. -->
+				<th>subject2</th>
+				<th>subject3</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>1</td> <!-- rowspan(세로 합칠때)="3"합치는 줄은 주석처리해야함. -->
+				<td>2</td> <!-- colspan(가로 합칠때)="2" 꼭 주석처리! -->
+				<td class="tdr">3</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>5</td>
+				<td class="tdr">6</td>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td>8</td>
+				<td class="tdr">9</td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td>11</td>
+				<td class="tdr">12</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td>20</td>
+				<td>30</td>
+				<td>40</td>
+			</tr>
+		</tfoot>
+	</table>
+
+	<table>
+		<caption>
+			데이블샘플 
+		</caption>
+		<thead>
+			<tr>
+				<th>1</th>
+				<th>1</th>
+				<th>1</th>
+				<th>1</th>
+			</tr>
+		</thead>
+	</table>
+</html>
