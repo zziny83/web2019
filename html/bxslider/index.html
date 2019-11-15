@@ -11,8 +11,22 @@
 	<script src="js/jquery.bxslider.js"></script>
 	<script>
 		$(document).ready(function(){
-			$(".slider").bxSlider({auto:true});
+			var mySlider = $(".slider").bxSlider({
+								auto:true,
+								controls:false     
+							});
+			$(".prevBtn").click(function(){
+				mySlider.goToPrevSlide();
+			});
+			$(".nextBtn").click(function(){
+				mySlider.goToNextSlide();
+			});
 		});
+				// controls:false ->왼쪽오른쪽 프리뷰 버튼 숨김
+				// var mySlider = 변수로 이름 지정한다. 그래야 버튼 클릭후 슬라이더 실행하기 위해.
+
+				$(document).ready(function(){});
+
 	</script>
 	<style>
 		.slider img{width: 100%;}
@@ -27,6 +41,16 @@
 		.bx-wrapper .bx-pager {
    		bottom: 30px;
 		}
+		.visual{position: relative;}
+		.visual div.prevBtn,
+		.visual div.nextBtn{
+			position: absolute; top:50%;
+			margin-top:-45px; /*버튼 이미지(img size:90px)의 반으로 조정*/ 
+			cursor:pointer;
+		}
+		.visual div.prevBtn{left: 10px;}
+		.visual div.nextBtn{right: 10px;}
+
 	</style>
 </head>
 <body>
@@ -35,9 +59,9 @@
 			<li><img src="images/pc01.jpg" alt="이미지1"></li>
 			<li><img src="images/pc02.jpg" alt="이미지2"></li>
 			<li><img src="images/pc03.jpg" alt="이미지3"></li>
-			
-		
 		</ul>
+		<div class="prevBtn"><img src="images/btn_pre.png" alt=""></div>
+		<div class="nextBtn"><img src="images/btn_next.png" alt=""></div>
 	</div>
 
 	

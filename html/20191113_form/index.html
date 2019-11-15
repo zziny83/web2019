@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>form</title>
+</head>
+<body>
+	<!-- label을 지정하면 앞에 이름을 누르면 폼이 활성화된다. -->
+	<form action="welcome.php" method="get"> <!-- method="get"방식은 정보가 다 보임. post타입은 암호화됨-->
+		<fieldset>
+			<legend>기본정보</legend>
+			<label for="myname">이름</label> 
+			<input type="text" name="myname" id="myname">
+			<br>
+
+
+			<!-- welcome.php?myname=zzin&zzin@naver.com -->
+
+			<label for="email">이메일</label>
+			<input type="text" name="email" id="email">
+		</fieldset>
+		<input type="submit" value="보내기">
+	</form>
+	
+</body>
+</html>
