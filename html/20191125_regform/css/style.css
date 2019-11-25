@@ -23,6 +23,7 @@ body{background-color: #cdcdcd;}
 .container fieldset{
 	border: 1px solid #ddd;
 	background-color: #fff;
+	margin-bottom: 10px;
 }
 .container .field{
 	position: relative;
@@ -45,3 +46,30 @@ body{background-color: #cdcdcd;}
 .container .ico.mail{background-position: 0 -47px;}
 .container .ico.pass{background-position: 0 -466px;}
 .container .ico.pass2{background-position: 0 -515px;}
+
+.container .field.radio{
+	position: relative;
+	height: 49px;
+}
+.container .field.radio input{
+	position: relative;
+	left:20px;top:10px;}
+.container .field.radio label{
+	position: absolute;
+	display: block;
+	width: 212px; height:31px;
+	text-align:center;
+	line-height:29px;
+	border: 1px solid #ccc;
+	background-color: #fff;
+	top:8px; 
+	z-index:1;
+	cursor: pointer; 
+}
+.container .field.radio label.male{left:15px;}
+.container .field.radio label.female{right:15px;}
+
+
+
+
+.w458{width: 458px !important;}

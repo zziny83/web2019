@@ -6,16 +6,24 @@
 	<title>빙그레</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<link rel="stylesheet" href="css/colorbox.css">
 	<link rel="stylesheet" href="css/style.css">
 	
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/jquery.bxslider.js"></script>
+	<script src="js/jquery.colorbox-min.js"></script>
+
 	<script>
 		$(document).ready(function(){
 			$(".slider").bxSlider({
 				auto:true,
 				controls:false,
 				// pager:false
+			});
+			$(".youtube").colorbox({
+				iframe:true,
+				innerWidth:"560px",
+				innerHeight:"315px"
 			});
 		});
 	</script>
@@ -85,10 +93,9 @@
 			</ul>
 		</div>
 		
-
 		<div class="main_menu">
 			<nav class="gnb_wrap">
-				<h1>빙그레</h1>
+				<h1><a href="#">빙그레</a></h1>
 				<div class="gnb">
 					<ul class="clearfix">
 						<li><a href="#">스토리</a></li>
@@ -104,25 +111,45 @@
 				</div>
 			</nav>
 		</div>
-	</header>
-	
-	<section id="sec_wrap">
+
+		<section id="sec_wrap">
 		<div class="container_wrap">
-			<ul>
+			<ul class="clearfix">
+				<li>
+					<div class="card">
+						<img src="images/main/bg_bing_gate05.png" alt="">
+						<div class="card-title">
+							빙그레 소개
+						</div>
+					</div>
+				</li>
+				<li class="vidoes">
+					<div class="card">
+						<a href="https://www.youtube.com/embed/f6jxhMQ13vk" class="youtube" title="우리 케미가 슈퍼!빙그레 슈퍼콘"><img src="images/main/play.png" alt="">
+						</a>
+						
+					</div>
+				</li>
+				<li class="double"></li>
 				<li></li>
 				<li></li>
+				<li class="double bg1st pl40">
+					<div class="card card-double">
+						<div class="card-title bar">전력 및 에너지 프린트</div>
+						<div class="card-text">세상을 밝히는<br> 빛과 에너지</div>
+					</div>
+				</li>
+				<li class="hdouble"></li>
+				<li class="double"></li>
 				<li></li>
 				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
+				<li class="double"></li>
 			</ul>
 		</div>
 	</section>
+	</header>
+	
+	
 
 
 	

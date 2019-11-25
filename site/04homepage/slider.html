@@ -3,16 +3,30 @@
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta charset="UTF-8">
-	<title>문서 제목</title>
+	<title>arrow</title>
 	<style>
-		.visualside{w12}
+		.box{position: relative;
+			background-color: #0ff;
+			width: 300px;height:300px;
+			_overflow: hidden; /*after사용시 안보인다.*/
+		}
+		.box:after{
+			content:"";
+			position: absolute; top:50%; right:-40px;
+			_margin-top:-20px;
+			transform:translateY(-50%); /*XY좌표값으로 조정*/
+			border-style:solid;
+			border-width: 20px;
+			border-color:transparent transparent transparent #0ff;
+			display: block;
+		}
 	</style>
 </head>
 <body>
-	<div class="visualside">
-		<div class="bananamilk">
-			<img src="images/@thum_prd05.png" alt="">
-		</div>
+	<div class="box">
+		<!-- before -->
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde voluptatibus adipisci odit facere accusamus, dolore natus commodi non doloremque voluptates officia praesentium, qui eveniet fugiat ipsum illo voluptas sunt sed illum dicta, aperiam ex? Blanditiis nobis, maiores porro. Placeat voluptas vero totam ipsa unde debitis error non, maiores deserunt cum?
+		<!-- after -->
 	</div>
 	
 </body>
