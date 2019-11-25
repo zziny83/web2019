@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>문서 제목</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<style>
+		.transfromTest{position: relative;}
+		.transfromTest img{}
+		.transfromTest a{}
+		.transfromTest .colorbox{
+			position: absolute; top:10px; left:10px;
+			width: 300px;height: 300px;
+			background-color: #F2275D;
+			opacity: 0;
+			transition: 0.5s;
+		}
+		.colorbox{cursor: pointer;}
+		.colorbox:hover{opacity:1;}
+		.colorbox .card-body{}
+		.colorbox .card-body h1{
+			display: block;color:#fff;
+			text-align:center;
+			padding-top: 80px;
+		}
+		.transfromTest .colorbox:hover .plus{transform: rotateZ(0deg);}
+		.transfromTest .colorbox .plus{position: relative;
+			width: 30px;height: 30px;
+			margin:45px auto;
+			transform: rotateZ(180deg);
+   			transition: 0.2s;
+		}
+		.transfromTest .colorbox .plus div:nth-child(1){
+			width: 100%;height: 1px; background-color: #fff;
+			position: absolute; top:50%;left:0; 
+		}
+		.transfromTest .colorbox .plus div:nth-child(2){
+			width: 1px;height:100%; background-color: #fff;
+			position: absolute; top:0;left:50%;
+		}
+
+	</style>
+
+</head>
+<body>
+	<div class="transfromTest">
+		<a href="#"><img src="../images/rr_5.jpg" alt=""></a>
+		<div class="colorbox">
+			<div class="card-body">
+				<h1>Life Fragrance</h1>
+			</div>
+			<div class="plus">
+				<div></div>
+				<div></div>
+			</div>
+		</div>
+
+					
+	</div>
+	
+</body>
+</html>

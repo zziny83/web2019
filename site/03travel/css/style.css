@@ -1,0 +1,37 @@
+@charset "uft8";
+
+/*header*/
+header#main_hd{ }
+header#main_hd .main_hdWrap{
+	background: #0870a7 url(../images/bg_airplane.jpg) no-repeat center;}
+header#main_hd .main_hdWrap div.main_title{
+	margin:0 auto;
+	width: 980px;height: 90px;
+	position: relative;
+}
+.main_title h1{display: block;width: 160px; height: 90px;
+	background-image:url(../images/hitravel.jpg);
+	cursor: pointer;
+	text-indent: -9999px;
+	background-color: #f00;
+}
+
+.main_title h5{display: block;width: 300px; height: 30px;
+	background-color: #fff; border-radius:15px;
+	position: absolute; top:50%; left:250px;
+	margin-top: -15px;
+	padding:5px 10px; color:#595959;
+}
+.main_title img{position: absolute; top:35px; left:520px;}
+.main_title p{position: absolute;top:27px; left:580px;
+	font-size:1.5em; color:#fff; font-weight: bold;
+ }
+
+ .main_title ul{position: absolute;top:50%;right:0;margin-top: -12px;}
+ .main_title ul li{float: left;}
+ .main_title ul li a{
+ 	display: block; background-image:url(../images/snslogo.jpg);
+ 	width: 24px;height: 24px;padding-right: 6px;}
+
+ .main_title ul li a:nth-child(1){background-position: 0px 0px; }
+ .main_title ul li a:nth-child(2){background-position: -30px 0px; }

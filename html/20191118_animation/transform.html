@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>transform</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<style>
+		body{background-image: url(../images/bg_grid.gif);}
+		div{width: 200px;height: 100px;background-color: yellow;}
+		/*div.box2{
+			transform:translate(100px, 50px) scale(1,1) rotate(0);
+			transition:0.3s;
+		}
+		div.box2:hover{
+			transform:translate(150px,100px) scale(1.2,1.2) rotate(30deg); 
+		}*/
+		/*scale은 가운데 중심에서 커진다.*/
+
+		.boxWrap{width: 200px;height: 200px;background-color:green;
+			position:relative;left:200px;top:100px; 
+		}
+		.boxWrap .box{
+			width: 200px;height: 200px;
+			transition:0.3s;
+			/*transform-origin: 0 0;*/ /*기본 중심축을 x y축으로 수정가능*/  
+		}
+		
+		.boxWrap .box1{
+			width: 200px;height: 200px;
+			transition:0.2s;
+			background-color: orange; 
+			position: absolute; top:0;
+		}
+		
+		.boxWrap .box2{
+		width: 200px;height: 200px;
+		transition:0.1s;
+		background-color: blue; 
+		position: absolute; top:0;
+		}
+		.boxWrap:hover .box{
+			transform:translate(0,0) rotate(-30deg);}
+
+		.boxWrap:hover .box1{
+			transform:translate(0,0) rotate(-20deg);}
+
+		.boxWrap:hover .box2{
+			transform:translate(0,0) rotate(-10deg);}
+		
+
+		
+
+	</style>
+</head>
+<body>
+	<div class="box1">박스1</div>
+	<div class="box2">박스2</div>
+
+	<div class="boxWrap">
+		<div class="box">테스트</div>
+		<div class="box1">테스트</div>
+		<div class="box2">테스트</div>
+	</div>
+
+	
+
+</body>
+</html>

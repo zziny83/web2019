@@ -6,9 +6,11 @@
 	<title>bxslider</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<link rel="stylesheet" href="css/colorbox.css">
 	<!-- script:src -->
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/jquery.bxslider.js"></script>
+	<script src="js/jquery.colorbox-min.js"></script>
 	<script>
 		$(document).ready(function(){
 			var mySlider = $(".slider").bxSlider({
@@ -21,7 +23,18 @@
 			$(".nextBtn").click(function(){
 				mySlider.goToNextSlide();
 			});
+
+			$(".pop").colorbox({rel:"pop"});
+			$(".youtube").colorbox({
+				iframe:true,
+				innerWidth:"560px",
+				innerHeight:"315px"
+			});
 		});
+				
+
+			
+
 				// controls:false ->왼쪽오른쪽 프리뷰 버튼 숨김
 				// var mySlider = 변수로 이름 지정한다. 그래야 버튼 클릭후 슬라이더 실행하기 위해.
 
@@ -64,6 +77,12 @@
 		<div class="nextBtn"><img src="images/btn_next.png" alt=""></div>
 	</div>
 
+	<a href="images/pc01.jpg" class="pop" title="사진01"><img src="images/pc01.jpg" alt=""></a>
+	<a href="images/pc02.jpg" class="pop" title="사진02"><img src="images/pc02.jpg" alt=""></a>
+	<a href="images/pc03.jpg" class="pop" title="사진03"><img src="images/pc03.jpg" alt=""></a>
+
+	<a href="https://www.youtube.com/embed/xxuutpeG6NI" class="youtube" title="영상01"><img src="images/pc01.jpg" alt=""></a>
+	
 	
 </body>
 </html>

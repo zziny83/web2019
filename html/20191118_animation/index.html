@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>animation</title>
+	<style>
+		.box{
+			_width:200px; height: 200px;
+			background-color: #00f;
+			text-align:center;
+			line-height: 200px;
+			font-weight:bold;
+			color:#fff;
+			position: absolute;
+
+			animation-name:boxHello;
+			animation-duration:1s; /*애니메이션 작동시간*/ 
+			animation-iteration-count:infinite;	 /*애니메이션 반복횟수|반복적으로 보여짐*/ 
+			animation-direction: alternate;	/*애니메이션 방향| alternate-끝나는지점으로 감 */
+		}
+		@keyframes boxHello{
+			from{color:#fff; background-color: #f00;top:0;right:0;}
+			to{color:#000; background-color: #00f;top:50px;right:20px;width: 200px;}
+		}
+
+		.box1{
+			width:200px; height: 200px;
+			background-color: #00f;
+			text-align:center;
+			line-height: 200px;
+			font-weight:bold;
+			color:blue;
+			position: absolute;
+
+			animation-name:boxHello1;
+			animation-duration:1s; /*애니메이션시간*/ 
+			animation-iteration-count:infinite;	
+			animation-direction: alternate;	
+			animation-delay: 1s;	/*애니메이션 지연 실행 시간*/
+		}
+		@keyframes boxHello1{
+			from{color:#00f; background-color: #ff0;top:0;left:0;}
+			to{color:#f00; background-color: #f0f;top:50px;left:20px;}
+		}
+
+		div.boxWrap{
+			width: 600px;height: 600px;
+			background-color: orange;position: relative;
+		}
+	.box01{
+		width: 600px;height: 10px;
+		background-color: #000;
+		animation-name:boxLine01;
+		animation-duration:1s;
+	}
+
+	@keyframes boxLine01{
+		from{width: 0;}
+		to{width: 600px;}
+	}
+
+	.box02{width:10px;height: 0px;
+		position: absolute; top:0; right:0;
+		background-color: red;
+		animation-name:boxLine02;
+		animation-duration:1s;
+		animation-delay: 1s;
+		animation-fill-mode: forwards; /*애니메이션 실행 후 마지막 적용*/ 
+	}
+
+	@keyframes boxLine02{
+		from{height: 0;}
+		to{height: 600px;}
+	}
+
+	.box03{
+		width: 0px;height: 10px;
+		background-color: #0f0;
+		position: absolute; bottom:0; 
+		animation-name:boxLine03;
+		animation-duration:1s;
+		animation-delay: 2s;
+		animation-fill-mode: forwards;
+	}
+	@keyframes boxLine03{
+		from{width: 0; right: 0;}
+		to{width: 600px;right: 0;}
+	}
+	
+	.box04{
+		width: 10px;height: 0;
+		background-color: blue;
+		position: absolute; bottom:0; left:0;
+		animation-name:boxLine04;
+		animation-duration:1s;
+		animation-delay: 3s;
+		animation-fill-mode: forwards;
+	}
+	@keyframes boxLine04{
+		from{height: 0; bottom: 0;}
+		to{height: 600px;bottom: 0;}
+	}
+	.button{
+		width: 150px;height: 40px;
+		text-align:center;
+		line-height:35px;
+		background-color: skyblue; font-weight: bold;
+		position: relative;
+	}
+	.button .bar{
+		width: 100%;height: 5px;background-color: #00f;
+		position: absolute;bottom:0;
+		animation-name:bar1;
+		animation-duration:0.3s;
+		animation-play-state:paused; /*애니메이션 작동 | 멈춤*/
+	}
+	@keyframes bar1{
+		0%{width: 0;}
+		100%{width: 100%;}
+	}
+	.button:hover .bar{animation-play-state: running;} 
+		/*마우스 호버 값으로 멈춰있는 애니메이션 실행가능 */
+	</style>
+</head>
+<body>
+	<!-- <div class="box">
+		안녕하세요
+	</div>
+
+	<div class="box1">
+		안녕하세요1
+	</div> -->
+	
+	<div class="boxWrap">
+		<div class="box01"></div>
+		<div class="box02"></div>
+		<div class="box03"></div>
+		<div class="box04"></div>
+	</div>
+	<br>
+	<div class="button">
+		자세히보기
+		<div class="bar"></div>
+	</div>
+</body>
+</html>

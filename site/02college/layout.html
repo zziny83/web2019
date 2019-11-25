@@ -6,8 +6,10 @@
 	<title>한국대학교</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<link rel="stylesheet" href="css/colorbox.css">
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/jquery.bxslider.js"></script>
+	<script src="js/jquery.colorbox-min.js"></script>
 
 	<style>
 		
@@ -152,6 +154,18 @@
 
 		#sec_wrap .container_wrap>ul>li:nth-child(4){background-color: #1651b7;}
 		#sec_wrap .container_wrap>ul>li.notice{padding: 20px; color:#fff;}
+		#sec_wrap .container_wrap>ul>li.notice .line{
+			width: 250px; height: 2px; background-color: #fff;
+			position: absolute; top:75px;
+		}
+		#sec_wrap .container_wrap>ul>li.notice .info_text{
+			position: absolute; top:100px; font-size:0.8em; }
+		.info_text li{padding-bottom: 8px;}
+		.info_text li a{color:#fff;}
+
+		#sec_wrap .container_wrap>ul>li.notice .info_day{
+			position: absolute; top:100px; right:28px; font-size:0.8em;}
+		.info_day li{padding-bottom: 8px;}
 
 		#sec_wrap .container_wrap>ul>li:nth-child(5){background-color: #fff;}
 		#sec_wrap .container_wrap>ul>li.card_news{
@@ -182,13 +196,22 @@
 		
 
 		#sec_wrap .container_wrap>ul>li:nth-child(6){background-color: #8e96a2;}
+		#sec_wrap .container_wrap>ul>li .info_action{position: absolute; bottom:0;}
+		#sec_wrap .container_wrap>ul>li .info_action h4{
+			color:#fff; text-align:center; line-height: 55px; width: 300px;
+			background-color: rgba(0,0,0,0.8); cursor: pointer;
+		}
+		
+
 		#sec_wrap .container_wrap>ul>li:nth-child(7){
-			width: 25%;background-color: #8e96a2;}
-		#sec_wrap .container_wrap>ul>li img.playBtn{display: block;
+			background: #8e96a2 url(images/school03.jpg);
+			width: 25%;}
+		#sec_wrap .container_wrap>ul>li.playBtn a{display: block;
 			position: absolute; top:50%;right:50%; margin-right:-33px;
 			margin-top:-33px;}
+
 		#sec_wrap .container_wrap>ul>li:nth-child(8){
-			background-color: #ff4538;width: 75%;
+			background-color: #ff4538; width: 75%;
 			margin-bottom: 15px;
 		}
 		
@@ -202,7 +225,7 @@
 			font-size:3.5em; }
 		li .slider02 .tilte_text2 a{
 			
-			display: block; margin-top:10px;
+			display: block; margin-top:20px;
 			width: 170px;height:40px; color:#fff;
 			background-color: #fb4437;
 			text-align: center; line-height: 40px;
@@ -276,7 +299,18 @@
 
    		.bx-wrapper .bx-pager{
    		    bottom: 30px;}
-
+		.Admission .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
+		    position: absolute;
+		    bottom: 30px;
+		    width: 120px;
+		    top:0;right:0;
+		}
+		.Admission .bx-wrapper .bx-pager.bx-default-pager a:hover, 
+		.Admission .bx-wrapper .bx-pager.bx-default-pager a.active, 
+		.Admission .bx-wrapper .bx-pager.bx-default-pager a:focus {
+			    background: #FF5722;
+			}
+   		
 		
 		
 
@@ -349,16 +383,13 @@
 			$(".nextBtn").click(function(){
 				mySlider.goToNextSlide();
 			});
-		});
-
-		$(document).ready(function(){
+		
 			$(".slider02").bxSlider({
 				auto:true,
 				controls:false 
 			});
-		});
-		$(document).ready(function(){
-			var mySlider03 = $(".slider03").bxSlider({
+		
+		    var mySlider03 = $(".slider03").bxSlider({
 				controls:false,
 				pager:false,
 				mode:'vertical'
@@ -369,9 +400,14 @@
 			$(".button_under").click(function(){
 				mySlider03.goToNextSlide();
 			});
+			$(".youtube").colorbox({
+				iframe:true,
+				innerWidth:"560px",
+				innerHeight:"315px"
+			});
 		});
 
-
+		
 	</script>
 </head>
 <body>
@@ -509,6 +545,23 @@
 				</li>
 				<li class="notice">
 					<h2>공지사항</h2>
+					<div class="line"></div>
+					<div class="info_text">
+						<ul>
+							<li><a href="#">ㆍ[공지]한국대학교 웹진...</a></li>
+							<li><a href="#">ㆍ[보도]우수대학교 선정수상</a></li>
+							<li><a href="#">ㆍ[공지]대학입시 설명회</a></li>
+							<li><a href="#">ㆍ[공지]2016년 1학기 성적...</a></li>
+						</ul>
+					</div>
+					<div class="info_day">
+						<ul>
+							<li>2016-06-12</li>
+							<li>2016-06-17</li>
+							<li>2016-06-05</li>
+							<li>2016-05-14</li>
+						</ul>
+					</div>
 				</li>
 				<li class="card_news">
 					<h2>SNS NEWS</h2>
@@ -529,12 +582,14 @@
 				</li>
 				<li>
 					<img src="images/school02.jpg" alt="">
+					<div class="info_action">
+						<h4>캠퍼스투어</h4>
+					</div>
 				</li>
-				<li>
-					<img src="images/school03.jpg" alt="">
-					<img src="images/play.png" alt="" class="playBtn">
+				<li  class="playBtn">
+					<a href="https://www.youtube.com/embed/i3wrTAzmWps" class="youtube" title="나의 길을 찾다"><img src="images/play.png" alt=""></a>
 				</li>
-				<li>
+				<li class="Admission">
 					<div class="slider02">
 						<div><img src="images/banner_slide_01.jpg" alt="편입생모집">
 							<div class="tilte_text2">

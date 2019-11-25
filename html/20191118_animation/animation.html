@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>animation</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<style>
+		div.btn01{
+			width: 200px; height: 40px;
+			background-color: skyblue;
+			border-radius:20px;
+			position: relative;
+			overflow:hidden; /*선이 삐져나가보이는걸 숨김*/ 
+		}
+		div.btn01 .txt{
+			width: 200px;height: 200px;
+			text-align:center;
+			line-height:40px;
+			font-weight: bold;
+			position: relative;
+			
+		}
+		div.btn01 .bar{
+			width: 100%;
+			height: 40px;
+			background-color: #00f;
+			position: absolute;
+			bottom:0;
+			animation-name:bar01;
+			animation-duration:0.5s;
+		}
+
+
+		@keyframes bar01{
+			from{width: 0;}
+			to{width: 100%;}
+		}
+
+
+
+		div.btn02{
+			width: 200px; height: 40px;
+			background-color: pink;
+			border-radius:20px;
+			position: relative;
+			overflow:hidden; /*넘쳐난걸 가둔다. 선이 삐져나가보이는걸 숨김*/ 
+			cursor:pointer;
+		}
+		div.btn02 .txt{
+			width: 200px;height: 200px;
+			text-align:center;
+			line-height:40px;
+			font-weight: bold;
+			position: relative;
+			z-index:1;
+		}
+		div.btn02 .bar{
+			width:0;
+			height: 5px;
+			background-color: #00f;
+			position: absolute;
+			bottom:0; right:0;transition: 0.3s;
+
+		}
+		div.btn02:hover .bar{
+			width: 100%;}
+
+
+
+		div.btn03{
+			width: 200px; height: 40px;
+			background-color: gray;
+			border-radius:20px;
+			position: relative;
+			overflow:hidden;
+			cursor:pointer;
+		}
+		div.btn03 .txt{
+			width: 200px;height: 200px;
+			text-align:center;
+			line-height:40px;
+			font-weight: bold;
+			position: relative;
+			z-index:1;
+		}
+		div.btn03 .bar{
+			width: 100%; /*width값이 지정이 되있어야 활성된다.*/
+			height: 10px;
+			background-color: #00f;
+			position: absolute;
+			bottom:0; transition: 0.3s;
+			transform:scaleX(0);
+		}
+
+		div.btn03:hover .bar{
+			transform:scaleX(1); /*transform은 중심축 가운데서 시작한다.*/ 
+		}
+	</style>
+</head>
+<body>
+	<div class="btn01">
+		
+		<div class="bar"></div>
+		<div class="txt">더보기</div>
+	</div>
+	
+	<div class="btn02">
+		<div class="txt">더보기</div>
+		<div class="bar"></div>
+		
+	</div>
+
+	<div class="btn03">
+		<div class="txt">더보기</div>
+		<div class="bar"></div>
+		
+	</div>
+	
+
+	<style>
+		.card01{
+			width: 300px;height: 300px;
+			background-color: pink;
+			position: relative;
+			overflow: hidden; /*보여지기전에 숨겨서 가둔다.*/
+			border-radius: 150px;
+		}
+		.card01 img{display: block; 
+			transform:scale(1,1);
+			transition: 0.3s;}
+		.card01 .card-body{
+			width: 100%; height: 300px;
+			background-color: rgba(0,0,0,0.5);
+			color:white; font-weight:bold;
+			text-align:center;
+			position: absolute;
+			top:0px; left:-300px;
+			transition: 0.3s;
+			border-radius: 150px;
+		}
+		.card01 .card-body .card-txt{
+			position: absolute; width: 100%;
+			top:50%; margin-top:-10px;
+		}
+		.card01:hover .card-body{top:0; left:0;}
+		.card01:hover img{transform:scale(1.2,1.2);}
+		
+		ul>li{float: left;}
+		.cardPR{width: 320px;height: 320px;
+			overflow: hidden;
+			position: relative;
+			cursor: pointer;
+		}
+
+		.cardPR img{display: block;}
+		
+		
+		.cardPR .card-body{width: 100%; height: 320px;
+			position: absolute;
+			bottom:-320px;
+			transition: 0.3s;
+		}
+		ul li:nth-child(1) .card-body{background-color:rgba(300,20,100,0.4);}
+		ul li:nth-child(2) .card-body{background-color:rgba(40,60,100,0.4);}
+		ul li:nth-child(3) .card-body{background-color:rgba(0,180,180,0.4);}
+		ul li:nth-child(4) .card-body{background-color:rgba(70,20,180,0.4);}
+
+		.cardPR .card-body .crad-text{
+			text-align:center;
+			width: 100%;
+			position: absolute;top:50%;
+			margin-top:-43px;
+			color:#fff;
+		}
+		.cardPR:hover .card-body{bottom:0;}
+		
+
+	</style>
+
+	<div class="card01">
+		<img src="../images/testimg.jpg" alt="">
+		<div class="card-body">
+			<div class="card-txt">
+				파리여행
+			</div>
+		</div>
+	</div>
+
+	<div>1111</div>
+
+	<ul>
+		<li>
+			<div class="cardPR">
+				<img src="../images/rr_1.jpg" alt="">
+				<div class="card-body">
+					<div class="crad-text">
+						<h1>RARA Moments</h1>
+						<p>라운드어라운드와<br>
+							함꼐하는 모든 행복의 순간
+						</p>
+					</div>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="cardPR">
+				<img src="../images/rr_2.jpg" alt="">
+				<div class="card-body">
+					<div class="crad-text">
+						<h1>Life Fragrance</h1>
+						<p>남들과는 다르게 나의 일상을<br>
+							특별하게 채우는 감성적인 향기
+						</p>
+					</div>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="cardPR">
+				<img src="../images/rr_3.jpg" alt="">
+				<div class="card-body">
+					<div class="crad-text">
+						<h1>Skin Care</h1>
+						<p>바쁜 일상 속에서도 그 무엇보다 소중한 <br>
+							나의 피부를 위한 스킨케어 
+						</p>
+					</div>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="cardPR">
+				<img src="../images/rr_5.jpg" alt="">
+				<div class="card-body">
+					<div class="crad-text">
+						<h1> The Life Cosmetic</h1>
+						<p>나와 나를 둘러싼 모든 일상이<br>
+							더 아름다워집니다.
+						</p>
+					</div>
+				</div>
+			</div>
+		</li>
+	</ul>
+
+	
+</body>
+</html>
