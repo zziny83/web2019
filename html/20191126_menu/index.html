@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>menu</title>
+	<link rel="stylesheet" href="../css/reset.css">
+
+	<style>
+	.submenu{display: none; }
+
+	nav.menu{width: 1000px;margin:0 auto;height: 35px;}
+	nav.menu>ul>li{float: left; width: 20%;background-color:#FF8286;}
+	nav.menu>ul>li>a{
+		display: block;
+		line-height: 35px;
+		text-align:center;
+	}
+	nav.menu>ul>li:hover{background-color: #FFA277;}
+	
+	/*nav.menu>ul>li:hover .submenu{display: block; opacity: 1;}*/
+	nav.menu>ul:hover .submenu{display: block; opacity: 1;} 
+	/*nav.menu 높이값을 지정해줘야함./*전체메뉴 다 보여줄수있다.*/
+
+	ul.submenu>li{padding:3px 0; }
+	ul.submenu>li:hover{background-color: #FF1753;}
+	ul.submenu>li:hover a{color: #FFF;}
+	ul.submenu>li>a{display: block; line-height: 30px; text-align:center;}
+
+	.visual{height: 400px;background-color: #ccc;}
+	</style>
+
+</head>
+<body>
+	<nav class="menu">
+		<ul class="clearfix">
+			<li><a href="#">menu1</a>
+				<ul class="submenu">
+					<li><a href="#">sub11</a></li>
+					<li><a href="#">sub12</a></li>
+					<li><a href="#">sub13</a></li>
+					<li><a href="#">sub14</a></li>
+				</ul>
+			</li>
+			<li><a href="#">menu2</a>
+				<ul class="submenu">
+					<li><a href="#">sub21</a></li>
+					<li><a href="#">sub22</a></li>
+					<li><a href="#">sub23</a></li>
+					<li><a href="#">sub24</a></li>
+				</ul>
+			</li>
+			<li><a href="#">menu3</a>
+				<ul class="submenu">
+					<li><a href="#">sub31</a></li>
+					<li><a href="#">sub32</a></li>
+					<li><a href="#">sub33</a></li>
+					<li><a href="#">sub34</a></li>
+				</ul>
+			</li>
+			<li><a href="#">menu4</a>
+				<ul class="submenu">
+					<li><a href="#">sub41</a></li>
+					<li><a href="#">sub42</a></li>
+					<li><a href="#">sub43</a></li>
+					<li><a href="#">sub44</a></li>
+				</ul>
+			</li>
+			<li><a href="#">menu5</a>
+				<ul class="submenu">
+					<li><a href="#">sub51</a></li>
+					<li><a href="#">sub52</a></li>
+					<li><a href="#">sub53</a></li>
+					<li><a href="#">sub54</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+	<div class="visual"></div>
+	
+</body>
+</html>

@@ -42,5 +42,19 @@ header#header a{
 .container .pass{background-position: 0 -466px;}
 .container .pass2{background-position: 0 -516px;}
 
+.container .field.radio{
+	height: 49px;
+}
+.container .field.radio label{
+	display: block;
+	width: 212px;height: 31px;
+	border: 1px solid #ccc;
+	text-align:center;
+	line-height: 28px;
+
+}
+.container .field.radio input{}
+
+
 
 .container .w458{width: 458px;}

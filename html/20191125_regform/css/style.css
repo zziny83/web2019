@@ -1,4 +1,5 @@
 @charset "utf-8";
+body{font-family: 'Nanum Gothic', sans-serif;}
 fieldset{border:0;}
 .blind, legend{
 	display: block;
@@ -69,7 +70,60 @@ body{background-color: #cdcdcd;}
 .container .field.radio label.male{left:15px;}
 .container .field.radio label.female{right:15px;}
 
+.container .field.birth label{
+	float: left; /*display: block;단위를 굳이 적용하지 않아도 된다.*/
+	width: 53px; height: 49px;line-height: 49px;
+	background-color: #e3e2e2; text-align: center;
+}
+.container .field.birth input,
+.container .field.confirm input
+{float: left;}
+
+.container .field.birth .field-wall,
+.container .field.confirm .field-wall
+{
+	float: left; width: 0;height: 29px;
+	border-right:1px solid #aaa;
+	margin-top:10px; text-indent:-9999px;
+}
+.container .field.birth select,
+.container .field.confirm select
+{
+	float: left;width: 110px;height: 29px;
+	font-size:15px; border:0 none;
+	margin-top:10px; margin-left: 10px;
+	margin-right: 7px;
+	background: url(../images/sel_arr.gif) no-repeat 100% 50%;
+	-webkit-appearance:none;
+	/*박스 화살표 모양 사라짐.*익스플로어에서는 적용 안됨*/
+ }
+
+
+.container .field.confirm .btn-click{
+	width: 99px;
+	height: 31px; line-height: 30px;
+	border: 1px solid #dcdcdc;
+	background-color: #fff;
+	color:#333;
+	position: absolute; 
+	top:9px; right:12px;
+	cursor: pointer;
+}
+
+.container .btn-area{}
+.container .btn-area .btn-submit{
+	width: 100%;
+	height: 59px;
+	background: #1fbc02 url(../images/btn_join2.gif) no-repeat 50% -2px;
+	border: 1px solid #1fbc02;
+	border-radius: 5px;
+	text-indent:-9999px;
+}
 
 
 
 .w458{width: 458px !important;}
+.w130{width: 130px !important;}
+.w145{width: 145px !important;}
+.w205{width: 205px !important;}
+.w330{width: 330px !important;}

@@ -4,6 +4,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta charset="UTF-8">
 	<title>회원가입</title>
+	<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -49,12 +50,53 @@
 						<label for="female" class="female">여자</label>
 						<input type="radio" id="female" name="user-s" value="female">
 					</p>
-
+					<p class="field birth clearfix">
+						<label for="user-birth">생일</label>
+						<input type="text" id="user-birth" class="inp-field w130" placeholder="년(4자)" maxlength="4" name="useryear">
+						<span class="field-wall">|</span>
+						<select name="month">
+							<option value="">월</option>
+							<option value="1">1월</option>
+							<option value="2">2월</option>
+							<option value="3">3월</option>
+							<option value="4">4월</option>
+							<option value="5">5월</option>
+							<option value="6">6월</option>
+							<option value="7">7월</option>
+							<option value="8">8월</option>
+							<option value="9">9월</option>
+							<option value="10">10월</option>
+							<option value="11">11월</option>
+							<option value="12">12월</option>
+						</select>
+						<span class="field-wall">|</span>
+						<input type="text" class="inp-field w145" placeholder="일" maxlength="2" name="userday">
+					</p>
+					<p class="field">
+						<label for="user-email" class="blind">본인확인 메일</label>
+						<input type="text" id="user-email" class="inp-field w458" placeholder="본인확인 이메일(선택)" name="useremail">
+					</p>
 				</fieldset>
 				<fieldset>
 					<legend>전화번호인증</legend>
+					<p class="field confirm clearfix">
+						<label for="user-num" class="blind">인증번호</label>
+						<select name="usernum" id="user-num">
+							<option value="+82">+82</option>
+						</select>
+						<span class="field-wall">|</span>
+						<input type="text" class="inp-field w205" placeholder="휴대전화번호입력" name="userphone">
+						<button type="button" class="btn-click">인증</button>
+					</p>
+					<p class="field confirm">
+						<label for="user-confirm" class="blind">인증번호입력</label>
+						<input type="text" id="user-confirm" class="inp-field w330" placeholder="인증번호" name="userconfirm">
+						<button type="button" class="btn-click">확인</button>
+					</p>
 				</fieldset>
-				<input type="submit" value="가입하기">
+				<div class="btn-area">
+					<input type="submit" value="가입하기" class="btn-submit">
+				</div>
 			</form>
 		</div>
 	</div>

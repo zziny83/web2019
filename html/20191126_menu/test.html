@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>menu</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<style>
+		
+	.submenu{display: none;}	
+
+	nav.menu{width: 1000px;margin: 0 auto;}
+	nav.menu>ul{}
+	nav.menu>ul>li{
+		float: left; width: 20%;background-color: #ccc;
+	}
+	nav.menu>ul>li:hover{background-color: #0ff;}
+
+	nav.menu>ul>li>a{
+		display: block;
+		text-align:center;
+		line-height: 35px;
+	}
+	nav.menu>ul>li:hover .submenu{display: block;}
+	
+	ul.submenu>li{padding: 3px 0;}
+	ul.submenu>li:hover{background-color: #567BE8;}
+	ul.submenu>li:hover a{color: #fff;}
+	ul.submenu>li>a{display: block; line-height: 30px;text-align:center;}
+
+
+	</style>
+
+</head>
+<body>
+	<nav class="menu">
+		<ul class="clearfix">
+			<li><a href="#">menu1</a>
+				<ul class="submenu">
+					<li><a href="#">submenu11</a></li>
+					<li><a href="#">submenu12</a></li>
+					<li><a href="#">submenu13</a></li>
+					<li><a href="#">submenu14</a></li>
+				</ul>
+			</li>
+			<li><a href="#">menu2</a>
+				<ul class="submenu">
+					<li><a href="#">submenu21</a></li>
+					<li><a href="#">submenu22</a></li>
+					<li><a href="#">submenu23</a></li>
+					<li><a href="#">submenu24</a></li>
+				</ul>
+			</li>
+			<li><a href="#">menu3</a>
+				<ul class="submenu">
+					<li><a href="#">submenu31</a></li>
+					<li><a href="#">submenu32</a></li>
+					<li><a href="#">submenu33</a></li>
+					<li><a href="#">submenu34</a></li>
+				</ul>
+			</li>
+			<li><a href="#">menu4</a>
+				<ul class="submenu">
+					<li><a href="#">submenu41</a></li>
+					<li><a href="#">submenu42</a></li>
+					<li><a href="#">submenu43</a></li>
+					<li><a href="#">submenu44</a></li>
+				</ul>
+			</li>
+			<li><a href="#">menu5</a>
+				<ul class="submenu">
+					<li><a href="#">submenu51</a></li>
+					<li><a href="#">submenu52</a></li>
+					<li><a href="#">submenu53</a></li>
+					<li><a href="#">submenu54</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+	
+</body>
+</html>
