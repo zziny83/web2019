@@ -1,5 +1,15 @@
 @charset "utf8";
 
+@font-face {
+	font-family: 'Binggrae';
+	font-style: normal;
+	font-weight: 400;
+	src: url(../font/Binggrae.eot);
+	src: url(../font/Binggrae.eot?#iefix) format('embedded-opentype'),
+		 url(../font/Binggrae.woff) format('woff');
+}
+
+
 img{display: block;}
 .bx-wrapper {
     -moz-box-shadow: none;
@@ -34,7 +44,7 @@ header#main_hd .bg_slider img{width: 100%;}
 .bg_slider .slider li.cc_4th .circle{background-color: #cbee4c;}
 .bg_slider .slider li.cc_5th .circle{background-color: #ff4b4c;}
 .bg_slider .slider li .txtWrap h2{
-	font-size:2.5em;padding-bottom: 30px;}
+	font-size:2.5em;padding-bottom: 30px;font-family: 'Binggrae';}
 .bg_slider .slider li .txtWrap .line{
 	width: 30px;height: 2px; 
 	margin: 10px 0;
@@ -88,18 +98,15 @@ section#sec_wrap .container_wrap{
 	width: 1260px; margin:0 auto;}
 .container_wrap>ul{}
 .container_wrap>ul>li{float: left;
-	width:25%;height: 315px;
-	_border: 1px solid #000;}
+	width:25%;height: 315px;}
 
-/*.container_wrap>ul>li:nth-child(2n){
-	_background-color: #f00;}
-*/
 
 .container_wrap>ul>li .card{
 	width: 100%; height: 315px;
 	text-align:center;
-	padding-top: 70px;color:#fff; font-weight: bold
+	padding-top: 40px;color:#fff; font-weight: bold
 }
+.container_wrap>ul>li .card.gray{color:#3f3f3f;}
 
 .container_wrap>ul>li .cardnews{
 	width: 210px; height: 315px;
@@ -107,11 +114,7 @@ section#sec_wrap .container_wrap{
 	padding-top: 50px; color:#303030; font-weight: bold
 }
 
-.container_wrap>ul>li .cardsns{
-	width: 100%; height: 315px;
-	text-align:left;
-	padding-top: 30px;color:#fff; font-weight: bold
-}
+
 .container_wrap>ul>li .banana .year{
 	text-align:center; font-size:2em;padding-top: 20px;
 	color:#fff; font-weight: bold
@@ -158,7 +161,10 @@ section#sec_wrap .container_wrap{
 
 .container_wrap .bg2st{
 	background:url(../images/main/binggraegoods.jpg);}
-.container_wrap .bg3st{background:url(images/img01_05.jpg);}
+.container_wrap .bg3st{
+	background:url(../images/main/TACCBJ.png);}
+.container_wrap .bg4st{
+	background:url(../images/main/bongsa.jpg);}
 
 
 
@@ -171,15 +177,29 @@ section#sec_wrap .container_wrap{
 .container_wrap>ul>li:nth-child(6){background-color: #FF70AD;}
 .container_wrap>ul>li:nth-child(7){background-color: #FF937E;}
 .container_wrap>ul>li:nth-child(8){background-color: #FFE645;}
-.container_wrap>ul>li:nth-child(9){background-color: #E861B4;}
-.container_wrap>ul>li:nth-child(10){background-color: #F66BFF;}
-.container_wrap>ul>li:nth-child(11){background-color: #65FF5D;}
+.container_wrap>ul>li:nth-child(9){background-color: #e2fe61;}
+.container_wrap>ul>li:nth-child(10){background-color: #feacad;}
+.container_wrap>ul>li:nth-child(11){background-color: #ffbebe;}
 
 .container_wrap>ul>li.double{width: 50% !important; }
 .container_wrap>ul>li .card.card-double{
 	text-align:left !important;}
 .hdouble{height: 630px !important;}
 .double{width: 630px !important;}
+
+.sub_container{width: 100%;height: 700px; background: #ccc url(../images/flagship/img_flagship_softlab_01.jpg)no-repeat;}
+
+.sub_container .flagship{width: 1260px; margin:0 auto;position: relative;}
+.sub_container .flagship h1{
+	width: 208px; height: 165px; text-indent:-9999px;
+	position: absolute; top:25px;left:50%; margin-left:-104px;
+	background: url(../images/flagship/img_softlab.png)no-repeat;;}
+
+
+
+
+
+
 
 /*width*/
 .pl20{padding-left: 20px !important;}
