@@ -8,10 +8,14 @@
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
 	<link rel="stylesheet" href="css/colorbox.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/slick.css">
 	
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/jquery.bxslider.js"></script>
 	<script src="js/jquery.colorbox-min.js"></script>
+	<script src="js/wow.js"></script>
+	<script src="js/slick.min.js"></script>
 
 	<script>
 		$(document).ready(function(){
@@ -25,7 +29,17 @@
 				innerWidth:"560px",
 				innerHeight:"315px"
 			});
+
+			$('.slick_slider').slick({
+			  centerMode: true,
+			  centerPadding: '100px',
+			  slidesToShow: 5
+			 
+			});
 		});
+		new WOW().init();
+
+		
 	</script>
 
 
@@ -115,7 +129,7 @@
 		<section id="sec_wrap">
 		<div class="container_wrap">
 			<ul class="clearfix">
-				<li>
+				<li class="wow fadeInUp" data-wow-delay="0.2s">
 					<a href="#">
 						<div class="card">
 							<img src="images/main/bg_bing_gate05.png" alt="">
@@ -125,13 +139,13 @@
 						</div>
 					</a>
 				</li>
-				<li class="vidoes">
+				<li class="vidoes wow fadeInUp" data-wow-delay="0.4s">
 					<div class="card">
-						<a href="https://www.youtube.com/embed/f6jxhMQ13vk" class="youtube" title="우리 케미가 슈퍼!빙그레 슈퍼콘"><img src="images/main/play.png" alt="">
+						<a href="https://www.youtube.com/embed/f6jxhMQ13vk" class="youtube" title="우리 케미가 슈퍼!빙그레 슈퍼콘"><img src="images/main/play.png" alt="" class="play">
 						</a>
 					</div>
 				</li>
-				<li class="double pl40 triangle">
+				<li class="double pl40 triangle wow fadeInUp" data-wow-delay="0.6s">
 					<a href="#">
 						<div class="cardnews card-double">
 							<div class="card-title2">뉴스[기업]</div>
@@ -139,7 +153,7 @@
 						</div>
 					</a>
 				</li>
-				<li>
+				<li class="wow fadeInUp" data-wow-delay="0.8s">
 					<a href="#">
 						<div class="banana">
 							<div class="year">
@@ -149,14 +163,14 @@
 							
 						</a>
 				</li>
-				<li>
+				<li class="wow fadeInUp" data-wow-delay="1s">
 					<div class="card">
 						<img src="images/main/bg_contri_gate05.png" alt="">
 						<div class="card-title gray">
 							재단법인 김구재단
 						</div>
 				</li>
-				<li class="double bg1st pl40">
+				<li class="double bg1st pl40 wow fadeInUp" data-wow-delay="1.2s">
 					<a href="#">
 						<div class="card card-double">
 							<div class="card-title bar">도산 안창호 선생이 강조한</div>
@@ -164,7 +178,7 @@
 						</div>
 					</a>
 				</li>
-				<li class="hdouble bg2st pl40">
+				<li class="hdouble bg2st pl40 wow fadeInUp" data-wow-delay="1.4s">
 					<a href="#">
 						<div class="card card-double">
 							<div class="card-title bar">빙그레 굿즈2탄</div>
@@ -172,13 +186,13 @@
 						</div>
 					</a>
 				</li>
-				<li class="double bg3st pl40">
+				<li class="double bg3st pl40 wow fadeInUp" data-wow-delay="1.6s">
 					<div class="card card-double gray">
 							<div class="card-title bar">빙그레, 건강지향통합 브랜드</div>
 							<div class="card-text">맛, 기능, 신뢰<br> 'TFT' 론칭</div>
 						</div>
 				</li>
-				<li>
+				<li class="wow fadeInUp" data-wow-delay="1.8s">
 					<div class="card">
 							<img src="images/main/bg_bing_gate02.png" alt="">
 							<div class="card-title gray">
@@ -186,7 +200,7 @@
 							</div>
 						</div>
 				</li>
-				<li>
+				<li class="wow fadeInUp" data-wow-delay="2s">
 					<a href="#">
 						<div class="card">
 							<img src="images/main/bg_contri_gate04.png" alt="">
@@ -196,17 +210,225 @@
 						</div>
 					</a>
 				</li>
-				<li class="double bg4st"></li>
+				<li class="double bg4st wow fadeInUp" data-wow-delay="2.2s"></li>
 			</ul>
 		</div>
 	</section>
 	</header>
 	
-	<div class="sub_container">
-		<div class="flagship">
+	<div class="section">
+		<div class="contents">
 			<h1>소프트랩</h1>
+			<img src="" alt="">
+			<p>세상에서 가장 <b>행복한 맛</b>을 <b>연구</b>합니다.</p>
+			<ul class="clearfix">
+				<li onclick="location.href='http://www.naver.com'">
+					<div class="card">
+						<img src="images/flagship/img_milk.png" alt="engineer">
+						<div class="card-body">
+							<p class="card-title">우유함량 100%</p>
+							<p>3배 농축유<br>국내산 청정지역의 건강한 젖소</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="card">
+						<img src="images/flagship/img_ice.png" alt="engineer">
+						<div class="card-body">
+							<p class="card-title">신선한 냉장유통</p>
+							<p>냉장유통만을 지켜갑니다.<br>신선함을 지켜갑니다.</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="card">
+						<img src="images/flagship/img_idea.png" alt="engineer">
+						<div class="card-body">
+							<p class="card-title">국내 최대 유지방 함유</p>
+							<p>더 좋은 맛을 찾기 위한<br>노력을 멈추지 않습니다.</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="card">
+						<img src="images/flagship/img_quality.png" alt="engineer">
+						<div class="card-body">
+							<p class="card-title">프리미엄 클래스</p>
+							<p>상상만으로도 즐거워지는 맛<br>새로운 세계로 안내합니다.</p>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+
+	<div class="sub_container">
+		<div class="sns_binggrae">
+			<div class="sns_title">
+				<h4>Beyond 2019</h4>
+				<h1>맛과 즐거움을 나누다</h1>
+				<p>새로운 즐거움이 가득한 빙그레의 맛을 SNS를 통해 함께 나눠보세요.</p>
+			</div>
 		</div>
 	</div>	
+	
+	<div class="slick">
+		<ul class="slick_slider clearfix">
+			<li>
+				<div class="slick_card">
+						<img src="images/main/sns_slide01.jpg" alt="engineer">
+						<div class="card-body">
+							<p class="card-title">프리미엄 클래스</p>
+							<p>상상만으로도 즐거워지는 맛<br>새로운 세계로 안내합니다.</p>
+						</div>
+					</div>
+			</li>
+			<li>
+				<div class="slick_card">
+						<img src="images/main/sns_slide02.jpg" alt="engineer">
+						<div class="card-body">
+							<p class="card-title">프리미엄 클래스</p>
+							<p>상상만으로도 즐거워지는 맛<br>새로운 세계로 안내합니다.</p>
+						</div>
+					</div>
+			</li>
+			<li>
+				<div class="slick_card">
+						<img src="images/main/sns_slide03.jpg" alt="engineer">
+						<div class="card-body">
+							<p class="card-title">프리미엄 클래스</p>
+							<p>상상만으로도 즐거워지는 맛<br>새로운 세계로 안내합니다.</p>
+						</div>
+					</div>
+			</li>
+			<li>
+				<div class="slick_card">
+						<img src="images/main/sns_slide04.jpg" alt="engineer">
+						<div class="card-body">
+							<p class="card-title">프리미엄 클래스</p>
+							<p>상상만으로도 즐거워지는 맛<br>새로운 세계로 안내합니다.</p>
+						</div>
+					</div>
+			</li>
+			<li>
+				<div class="slick_card">
+						<img src="images/main/sns_slide05.jpg" alt="engineer">
+						<div class="card-body">
+							<p class="card-title">프리미엄 클래스</p>
+							<p>상상만으로도 즐거워지는 맛<br>새로운 세계로 안내합니다.</p>
+						</div>
+					</div>
+			</li>
+			<li>
+				<div class="slick_card">
+						<img src="images/main/sns_slide06.jpg" alt="engineer">
+						<div class="card-body">
+							<p class="card-title">프리미엄 클래스</p>
+							<p>상상만으로도 즐거워지는 맛<br>새로운 세계로 안내합니다.</p>
+						</div>
+					</div>
+			</li>
+			<li>
+				<div class="slick_card">
+						<img src="images/main/sns_slide07.jpg" alt="engineer">
+						<div class="card-body">
+							<p class="card-title">프리미엄 클래스</p>
+							<p>상상만으로도 즐거워지는 맛<br>새로운 세계로 안내합니다.</p>
+						</div>
+					</div>
+			</li>
+		</ul>
+	</div>
+
+
+	<!-- <div class="slick_slide">
+		<div class="slider_box">
+			<ul id="slick" class="clearfix">
+				<li>
+					<div class="card_box">
+						<a href="#"><img src="images/main/sns_slide01.jpg" alt=""></a>
+						<div class="card-body">
+							<p class="card-title">프리미엄 클래스</p>
+							<p>상상만으로도 즐거워지는 맛<br>새로운 세계로 안내합니다.</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="card_box">
+						<a href="#"><img src="images/main/sns_slide01.jpg" alt=""></a>
+						<div class="card-body">
+							<p class="card-title">프리미엄 클래스</p>
+							<p>상상만으로도 즐거워지는 맛<br>새로운 세계로 안내합니다.</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="card_box">
+						<a href="#"><img src="images/main/sns_slide01.jpg" alt=""></a>
+						<div class="card-body">
+							<p class="card-title">프리미엄 클래스</p>
+							<p>상상만으로도 즐거워지는 맛<br>새로운 세계로 안내합니다.</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="card_box">
+						<a href="#"><img src="images/main/sns_slide01.jpg" alt=""></a>
+						<div class="card-body">
+							<p class="card-title">프리미엄 클래스</p>
+							<p>상상만으로도 즐거워지는 맛<br>새로운 세계로 안내합니다.</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="card_box">
+						<a href="#"><img src="images/main/sns_slide01.jpg" alt=""></a>
+						<div class="card-body">
+							<p class="card-title">프리미엄 클래스</p>
+							<p>상상만으로도 즐거워지는 맛<br>새로운 세계로 안내합니다.</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="card_box">
+						<a href="#"><img src="images/main/sns_slide01.jpg" alt=""></a>
+						<div class="card-body">
+							<p class="card-title">프리미엄 클래스</p>
+							<p>상상만으로도 즐거워지는 맛<br>새로운 세계로 안내합니다.</p>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div> -->
+	<footer id="footer_wrap">
+		<div class="footer_logo">
+			<a href="#"><img src="images/main/footer_logo.png" alt=""></a>
+			<p class="text">ⓒ Binggrae all rights reserved.</p>
+			<p class="familySite">
+				<select name="Site">
+					<option value="">familySite</option>
+					<option value="1">빙그레 공식 페이스북</option>
+					<option value="2">빙그레 공식 인스타그램</option>
+					<option value="3">빙그레 공식 유튜브</option>
+					<option value="4">바나나맛우유 페이스북</option>
+					<option value="5">아이스크림 페이스북</option>
+					<option value="6">끌레도르 브랜드사이트</option>
+				</select>
+			</p>
+			
+		</div>
+		<div class="footer_con">
+			<ul class="footer_link clearfix">
+				<li><a href="#"></a>오시는 길</li>
+				<li><a href="#"></a>개인정보처리방침</li>
+				<li><a href="#"></a>이용약관</li>
+				<li><a href="#"></a>고객센터</li>
+				<li><a href="#"></a>사이트맵</li>
+			</ul>
+		</div>
+
 
 
 	
