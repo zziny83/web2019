@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<!-- meta:vp -->
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>media</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<style>
+		img{width: 100%;display: block;}
+		.container{width: 1200px;margin:0 auto;}
+		.container .row{width: 100%;}
+		.container .row div{width: 25%; float: left;}
+		
+
+		@media screen and (min-width:960px){ /*pc버전*/
+			body{background-color: #f00;}
+			.m-none{display: block;}
+		}
+		@media screen and (min-width:568px) and (max-width: 959px){ /*tablet버전*/
+			body{background: pink;}
+			.container{width: 100%;}
+			.container .row div{width: 50%;}
+			.m-none{display: block;}
+		}
+		@media screen and (max-width: 567px){ /*mobile버전*/
+			body{background-color: skyblue;}
+			.container{width: 100%;}
+			.container .row div{width: 100%;}
+			.m-none{display: none;}
+		}
+	</style>
+</head>
+<body>
+
+
+	<div class="container">
+		<div class="row clearfix">
+			<div><img src="../images/testimg.jpg" alt=""></div>
+			<div><img src="../images/testimg.jpg" alt=""></div>
+			<div><img src="../images/testimg.jpg" alt=""></div>
+			<div class="m-none"><img src="../images/testimg.jpg" alt=""></div>
+		</div>
+	</div>
+</body>
+</html>

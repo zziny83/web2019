@@ -3,6 +3,7 @@
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>빙그레</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
@@ -33,7 +34,29 @@
 			$('.slick_slide1').slick({
 			 	centerMode: true,
 			  centerPadding: '60px',
-			  slidesToShow: 5
+			  slidesToShow: 5,
+			  responsive: [
+
+			     {
+			      breakpoint: 768,
+			      settings: {
+			        arrows: false,
+			        centerMode: false,
+			        centerPadding: '40px',
+			        slidesToShow: 3
+			      }
+			    }
+			    ,
+			     {
+			      breakpoint: 560,
+			      settings: {
+			        arrows: false,
+			        centerMode: false,
+			        centerPadding: '40px',
+			        slidesToShow: 1
+			      }
+			    }
+			  ]
 			 
 			});
 		});
