@@ -333,29 +333,49 @@ header#sub_hd .main_menu{ _background-color: #0f0;
 	width: 100%;
 }
 
-ul.sub{display: none;}
+
+
 #sub_hd .main_menu .gnb_wrap{
-	margin:0 auto;
-	position: relative;
-	width: 1260px;height: 70px;
+	margin:0 auto;	position: relative;
+	width: 1260px;height:70px;
 	}
 #sub_hd .gnb_wrap h1{cursor: pointer;
 	width: 150px;line-height:70px; text-indent:-9999px; 
-	background: url(../images/main/logo_pc.png)no-repeat center; }
-#sub_hd .gnb_wrap .gnb{}
-#sub_hd .gnb_wrap .gnb ul{
-	position: absolute;right:100px; top:50%;margin-top:-10px;}
-#sub_hd .gnb_wrap .gnb ul li{float: left;}
-#sub_hd .gnb_wrap .gnb ul li a{
-	padding:0 50px; text-align:center;
-	color:#000; font-weight: bold;	}
-#sub_hd .gnb_wrap .gnb ul li a:hover{}
-#sub_hd .gnb_wrap ul.sub{}
-#sub_hd .gnb_wrap ul.sub li{}
+	background: url(../images/main/logo_pc.png)no-repeat center;}
+
+ul.sub{display: none;}
+
+#sub_hd .gnb_wrap .subgnb{float: right;height:70px;margin:0 auto;}
+#sub_hd .gnb_wrap .subgnb>ul{width: 830px;height: 70px;
+	position: absolute; right:100px; top:0;}
+#sub_hd .gnb_wrap .subgnb>ul>li{
+	float: left;width: 20%;}
+#sub_hd .gnb_wrap .subgnb>ul>li:hover ul.sub{display: block;}
+#sub_hd .gnb_wrap .subgnb>ul>li>a{text-align:center;display: block;
+	color:#000; font-weight: bold;line-height: 70px;}
+#sub_hd .gnb_wrap .subgnb>ul>li>a:hover{color: #ed1c24;}
+#sub_hd .gnb_wrap .subgnb>ul>li>a:after{content:"";display: block;
+	background-color: #ed1c24;width: 31%;height: 3px;
+	/*position: absolute; bottom: -1px; *//*left: 50%;*/}
+
+#sub_hd .gnb_wrap .subgnb ul li a:hover{}
+#sub_hd .gnb_wrap ul.sub{width:100%;_background-color: #ccc;}
+#sub_hd .gnb_wrap ul.sub li{width: 166px;}
 #sub_hd .gnb_wrap ul.sub li a{
 	display: block; text-align: center;
-	line-height: 30px;font-size:0.7em;}
+	line-height: 40px;font-size:13px;font-weight: bold;}
 
 
 #sub_hd .main_menu .gnb_wrap{
 	border-bottom: 1px solid rgba(150,150,150,0.5);}
+
+
+.sblang_select{
+	position: absolute; right:0;top:50%; margin-top:-16px;
+	
+}
+.sblang_select a{float: left; margin-right:3px; text-align:center;
+	font-weight: bold; line-height: 28px; font-size:0.8em;}
+.sblang_select a:hover p{width: 40px; height: 32px; color:#fff;background-color: #79797a;}
+.sblang_select a>p:nth-child(1){
+	width: 40px; height: 32px; border: 2px solid #79797a;}
