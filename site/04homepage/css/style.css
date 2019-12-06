@@ -345,8 +345,8 @@ div.b_logo{margin:10px auto;
 ul.sub{display: none;}
 
 #sub_hd .gnb_wrap .subgnb{ position: relative;
-	float: right; width: 950px;height:70px;margin:0 auto;}
-#sub_hd .gnb_wrap .subgnb>ul{float: left;width: 830px;height: 70px;}
+	float: right; width: 900px;height:70px;margin:0 auto;}
+#sub_hd .gnb_wrap .subgnb>ul{float: left;width: 800px;height: 70px;}
 #sub_hd .gnb_wrap .subgnb>ul>li{padding:0 40px;
 	float: left;}
 #sub_hd .gnb_wrap .subgnb>ul>li:last-child{padding-right: none;}
@@ -376,13 +376,13 @@ ul.sub{display: none;}
 #sub_hd .main_menu .gnb_wrap{
 	border-bottom: 1px solid rgba(150,150,150,0.8);}
 #sub_hd .gnb_wrap .sub_menu{position: absolute; bottom: 0; left:50%;
-	width: 1000px;height: 45px;margin-left:-500px;background-color: #ffec48;}
+	width: 1000px;height: 45px;margin-left:-500px;background-color: #d1d3d4;}
 .sub_menu ul{}
 .sub_menu ul li{float: left;width: 25%;border-right: 1px solid #d1d3d4;}
 .sub_menu ul li:last-child{border-right:none;}
-.sub_menu>ul>li>a.active{background-color:#d1d3d4;color:#ed1c24;}
+.sub_menu>ul>li>a.active{background-color:#ffec48;color:#ed1c24;}
 
-.sub_menu ul li:hover{background-color:#d1d3d4;}
+.sub_menu ul li:hover{background-color:#ffec48;}
 .sub_menu ul li a{display: block;text-align: center;  
 	line-height: 45px;font-weight:bold;font-size:14px;}
 .sub_menu ul li a:hover{color:#ed1c24;font-weight:900;}
