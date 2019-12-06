@@ -345,8 +345,8 @@ div.b_logo{margin:10px auto;
 ul.sub{display: none;}
 
 #sub_hd .gnb_wrap .subgnb{ position: relative;
-	float: right; width: 900px;height:70px;margin:0 auto;}
-#sub_hd .gnb_wrap .subgnb>ul{float: left;width: 800px;height: 70px;}
+	float: right; width: 880px;height:70px;margin:0 auto;}
+#sub_hd .gnb_wrap .subgnb>ul{float: left;width: 750px;height: 70px;}
 #sub_hd .gnb_wrap .subgnb>ul>li{padding:0 40px;
 	float: left;}
 #sub_hd .gnb_wrap .subgnb>ul>li:last-child{padding-right: none;}
@@ -378,7 +378,7 @@ ul.sub{display: none;}
 #sub_hd .gnb_wrap .sub_menu{position: absolute; bottom: 0; left:50%;
 	width: 1000px;height: 45px;margin-left:-500px;background-color: #d1d3d4;}
 .sub_menu ul{}
-.sub_menu ul li{float: left;width: 25%;border-right: 1px solid #d1d3d4;}
+.sub_menu ul li{float: left;width: 25%;border-right: 1px solid #ffec48;}
 .sub_menu ul li:last-child{border-right:none;}
 .sub_menu>ul>li>a.active{background-color:#ffec48;color:#ed1c24;}
 
@@ -400,8 +400,36 @@ ul.sub{display: none;}
 ul.sb2menu{display: none;}
 .locationWrap div.menuHover {position: relative;}
 ul.sb2menu{position: absolute;left:130px;top:40px;}
-ul.sb2menu>li{width: 130px; background-color: #ccc;}
+ul.sb2menu>li{width: 130px; background-color:#e6e7e8;}
 ul.sb2menu>li>a.hide{display: block;text-align: center;  
 	line-height: 35px;font-weight:bold;font-size:12px;}
+ul.sb2menu>li>a.hide:hover{color:#ed1c24; 
+	border-bottom: 1px solid #ed1c24;}
 .locationWrap div.menuHover>a:hover{color:#ed1c24;}
 .locationWrap div.menuHover:hover ul.sb2menu{display: block;}
+
+
+/*contnet_inner*/
+#contnet_inner{}
+#contnet_inner .con_area{width: 1260px;margin: 0 auto;}
+.con_area .ceo_tit_box{}
+.con_area .ceo_tit_box h3{line-height: 200px; text-align: center;
+		font-family: 'Binggrae'; font-size: 2.5em;}
+.con_area .ceo_tit_box .ceo_theme{height: 540px;}
+
+.con_area .ceo_title{height: 700px;position: relative;}
+
+.ceo_title .tit_box{width: 500px;height: 700px;}
+.ceo_title .tit_box .box{position: absolute;left:0; top:30px;
+	width: 500px;height: 500px;border: 6px solid #ccc;}
+.ceo_title .tit_box p{color: #222;position: absolute;top:60px;left:40px;z-index: 1;
+	font-size:2.2em;line-height:70px; letter-spacing:-2.5px;word-spacing:-3px;
+}
+
+.ceo_title .tit_sub{width: 700px;height: 670px;
+	position: absolute;right:0;top:23px;}
+.ceo_title .tit_sub p{color: #222;font-size: 18px;line-height:30px;letter-spacing:-1px;}
+
+
+.fs28{font-size:28px !important;}
+span{color:#ed1c24;}
