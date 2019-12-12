@@ -1,0 +1,74 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap');
+
+
+*{-webkit-box-sizing: border-box;-moz-box-sizing: border-box;
+box-sizing: border-box;}
+html, body{margin: 0; padding: 0; font-family: 'Nanum Gothic', sans-serif; }
+header, section, article, aside, nav, footer{display: block;}
+header:after, section:after, article:after, aside:after, nav:after, footer:after{content:"";display: block;clear: both;}
+ul, ol{margin: 0; padding: 0;list-style: none;}
+h1, h2, h3, h4, h5, h6, p{margin: 0;}
+a{text-decoration:none;}
+.clear{clear: both;}
+
+
+
+header{width: 280px; height: 100%; background: #6ab3b2; box-shadow:inset 0 0 15px #000;position: fixed;}
+.header-frame{width: 100%;height: 100%;position: relative;}
+.logo{width: 100%;height:auto; text-align: center; padding:80px 0;}
+.logo img{width: 145px;}
+nav{}
+nav>ul{}
+nav>ul>li{border-bottom:1px solid #fff; text-align: center;}
+nav>ul>li:first-child{border-top:1px solid #fff;}
+nav>ul>li>a{display: block;font-size:18px; color:#fff; line-height: 60px;}
+nav>ul>li:hover>a{background:#fff; color:#6ab3b2; box-shadow:inset 1px 1px 3px #000;}
+.link{position: absolute; bottom:20px; width: 100%; text-align: center;}
+.link p{font-size:18px; color:#fff; padding-bottom: 10px;}
+.link>ul{}
+.link>ul>li{display:inline-block;}
+.link>ul>li>a{}
+.link>ul>li>a>img{padding: 0 5px; }
+
+section{width: 100%; height: auto; background: #ddd;}
+article{width: -webkit-calc(100% - 280px); -moz-width: calc(100% - 280px); width: calc(100% - 280px); 
+	height: auto; margin-left:280px;}
+
+.cont-box{width: 25%; height: 220px; float: left; background-size: cover; 
+	background-repeat:no-repeat;  background-position: 50% 50%;}
+.cont-01{width: 50%;height:440px; background-image: url('../img/t-1-213373_640x480.jpg');}
+.cont-02{background-image: url('../img/t-3-325075_640x480.jpg');}
+.cont-03{background-image: url('../img/t-21-545213_640x480.jpg');}
+.cont-04{background-image: url('../img/t-7-360109_640x480.jpg');}
+.cont-05{background-image: url('../img/t-8-308603_640x480.jpg');}
+.cont-06{background-image: url('../img/t-9-340072_640x480.jpg');}
+.cont-07{width: 50%;background-image: url('../img/t-17-247234_640x480.jpg');}
+.cont-08{background-image: url('../img/shutterstock_58264459-111274_640x480.jpg');}
+.cont-09{background-image: url('../img/t-13-584189_640x480.jpg');}
+.cont-10{background-image: url('../img/shutterstock_56785618-132726_640x480.jpg');}
+.cont-11{width: 50%;background-image: url('../img/t-5-236106_640x480.jpg');}
+.cont-12{width: 50%;background-image: url('../img/t3-8-321596_640x480.jpg');}
+.cont-13{background-image: url('../img/t-19-373493_640x480.jpg');}
+.cont-14{background-image: url('../img/t3-9-289799_640x480.jpg');}
+
+.cont-box .rgba{width: 100%;height: 100%; background:rgba(255, 170, 0, 0.8); transition:all 1s; opacity: 0;}
+.cont-box .rgba .table{width: 100%;height: 100%; display: table;position: relative; overflow: hidden} /*부모가 display: table*/
+.cont-box .rgba .table .text-box{display:table-cell; text-align: center; vertical-align: middle;} /*자식이 display: table-cell*/
+.cont-box .rgba .table .text-box h3{font-size:30px; color:#fff; line-height: 1; padding-bottom: 10px;}
+.cont-box .rgba .table .text-box p:nth-of-type(1){font-size:18px;color:#fff;line-height: 1; padding-bottom:10px;}
+.cont-box .rgba .table .text-box .line{width: 100px; height: 4px; background: #fff; margin: 0 auto 10px;}
+.cont-box .rgba .table .text-box p:nth-of-type(2){font-size:14px;color:#fff; line-height: 1; }
+.cont-box .rgba .table a{display: block; width:40px; height: 40px; border-radius:50%; 
+	background: #fff; text-align: center; padding-top:8px; margin: 0 auto;
+	position: absolute; bottom:-60px; transition: bottom 1s;  left:-webkit-calc(50% - 20px); left:-moz-calc(50% - 20px); left:calc(50% - 20px);
+	}
+.cont-box:hover .rgba .table a{bottom:25px;}
+
+.cont-box:hover .rgba{opacity: 1;}
+.cont-box:nth-child(1):hover .rgba .table a{bottom:60px;}
+
+.cont-box:nth-child(7) .rgba .table, .cont-box:nth-child(11) .rgba .table, .cont-box:nth-child(12) .rgba .table{width: 50%;}
+
+.icon{display: none;}
+.mobile{display: none;}

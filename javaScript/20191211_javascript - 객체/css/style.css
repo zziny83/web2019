@@ -1,0 +1,33 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'BM JUA';
+    src: url('../fonts/BMJUA.eot');
+    src: url('../fonts/BMJUA.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BMJUA.woff2') format('woff2'),
+        url('../fonts/BMJUA.woff') format('woff'),
+        url('../fonts/BMJUA.ttf') format('truetype'),
+        url('../fonts/BMJUA.svg#BMJUA') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+*{font-family: 'BM JUA';-webkit-box-sizing: border-box;-moz-box-sizing: border-box;
+box-sizing: border-box;}
+html, body{margin: 0; padding: 0;}
+header, section, article, aside, nav, footer{display: block;}
+header:after, section:after, article:after, aside:after, nav:after, footer:after{content:"";display: block;clear: both;}
+ul, ol{margin: 0; padding: 0;list-style: none;}
+h1, h2, h3, h4, h5, h6, p{margin: 0;}
+a{text-decoration:none;}
+.clear{clear: both;}
+
+
+.outer{width: 1200px;height: auto; margin: 0 auto; }
+.outer:after{content:""; display: block; display: block;}
+.outer .box{width:calc(25% - 10px); height:440px; margin: 0 5px;padding: 10px; 
+	background: #aaffaa;float: left;position: relative;}
+.outer .box img{width: 100%;}
+.outer .box h2{padding: 5px 0; font-size: 20px;}
+.outer .box .context{font-size: 14px;}
+.outer .box .price{font-style: italic; font-weight:bold;position: absolute;bottom:10px;right:10px;

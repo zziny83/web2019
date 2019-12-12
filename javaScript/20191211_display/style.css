@@ -1,0 +1,19 @@
+@charset "utf-8";
+p{margin:0;}
+
+.block p{width: 400px;height:100px; background: #aaffff; display: block; padding: 10px 0;}
+
+.inline p{width: 400px;height:100px; background: #ffaaff; display: inline; padding: 10px 0;}
+
+.inline-block{text-align:center;font-size:0;} /*enter값 : 벌어지는 간격값을 0로 만든다.*/
+.inline-block p{width: 400px;height:100px; background: #ffffaa; 
+	display: inline-block; padding: 10px 0;font-size:18px; vertical-align: middle;}
+.inline-block p:nth-child(2){height: 600px;}
+
+
+/*vertical-align(수직 정렬): middle은 display:inline-block, table-cell에서만 사용 가능*/
+
+nav{height: 80px; background: #ffaaff;}
+nav>ul{text-align: center;}
+nav>ul>li{display: inline-block; margin: 0 10px; vertical-align:top;}
+nav>ul>li>a{display: block; line-height: 80px; text-decoration: none;}

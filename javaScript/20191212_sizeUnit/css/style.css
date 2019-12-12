@@ -1,0 +1,34 @@
+@charset "utf-8";
+
+.em_unit{font-size:24px;}
+.em_unit h2{font-size:1.5em; line-height: 1;}
+.em_unit p{font-size:1em; line-height: 1;}
+.em_unit span{font-size:0.5em; line-height: 1;}
+
+@media(max-width:768px){
+	.em_unit{font-size:20px;}
+}
+/*rem 단위는 부모영역에서 지정된 폰트의 크기에 따라 영향을 받는다.*/
+
+html{font-size:48px;}
+.rem_unit{}
+.rem_unit h2{font-size:1.5rem; line-height: 1;}
+.rem_unit p{font-size:1rem; line-height: 1;}
+.rem_unit span{font-size:0.5rem; line-height: 1;}
+
+@media(max-width:768px){
+	html{font-size:24px;}
+}
+/*rem 단위는 최상위 객체인 html에서 조정하게되면 모든 사이즈가 적용받는다.*/
+
+
+.vw_unit{} 
+.vw_unit h2{font-size:8vw;}  /* vw가로형 */
+.vw_unit p{font-size:8vh;}  /* vh세로형 */
+.vw_unit span{}
+
+
+.sec{width: 100%; height: 100vh;}
+.sec_01{background: #ffaaff;}
+.sec_02{background: #aaaaff;}
+.sec_03{background: #ffffaa;}
