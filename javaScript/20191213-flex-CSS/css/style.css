@@ -1,0 +1,120 @@
+@charset "utf-8";
+*{-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+html, body{margin: 0; padding: 0;}
+ul, ol{margin: 0; padding: 0; list-style: none;}
+h1, h2, h3, h4, h5, h6, p{margin: 0;}
+a{text-decoration: none;}
+
+#flex_direct_01 .flex_container{
+	width:600px; 
+	height:300px;
+	background: #aaa;
+	display:flex;
+	flex-direction:row; /*자식요소를 가로 정방향(좌측부터)으로 배치하겠다는 의미(기본값)*/
+	_flex-direction:row-reverse; /*자식요소를 가로 역방향으로 배치하겠다는 의미. 만약 부모의 가로공간이 남을 경우 부모의 우측면으로부터 밀착 */
+	_flex-direction:column; /*자식요소를 세로방향으로 정방향 배치를 의미. 만약 부모의 세로영역이 자식의 높이의 총 합보다 작을 경우 자식의 높이 값은 재조정됨 */
+	_flex-direction:column-reverse; /*자식요소를 세로방향으로 역방향 배치를 의미.*/
+	_flex-wrap:nowrap; /*부모의 1줄 영역보다 가로폭의 합이 많아지더라도 복수의 라인을 구성하지 않겠다는 의미. 부모의 가로 영역이 자식의 가로 총합보다 작을 경우 각 자식의 가로폭은 자동으로 조정 됨 */
+	flex-wrap:wrap; /*부모 영역 내부에서 실제 자식의 가로값이 적용되는 구성. 부모의 가로영역이 자식의 가로 총합보다 작을 경우 다음줄로 내린다.*/
+	_flex-wrap:wrap-reverse; /*좌측의 하단으로부터 세로방향을 기준으로 역순으로 자식들이 배치 됨*/
+	_justify-content: flex-start; /*부모의 영역으로부터 내부박스들을 좌측으로 정렬(기본값)*/
+	_justify-content: flex-end;  /*부모의 영역으로부터 내부박스들을 우측으로 정렬(기본값)*/
+	_justify-content: center;  /*부모의 영역으로부터 내부박스들을 중앙으로 정렬(기본값)*/
+	_justify-content: space-between;  /*부모영역의 가로 폭을 기준으로 모든 자식의 가로폭을 활용하여 분배하여 정렬(좌우측 끝선을 기준으로 배치)*/
+	justify-content: space-around;  /*각 내부 박스를 기준으로 좌우측으로 균등하게 나누어서 정렬*/
+
+}
+#flex_direct_01 .flex_item{	width:100px; height: 120px;}
+#flex_direct_01 .flex_item:nth-child(1){background: #ffaaff;}
+#flex_direct_01 .flex_item:nth-child(2){background: #aaaaff;}
+#flex_direct_01 .flex_item:nth-child(3){background: #aaffff;}
+#flex_direct_01 .flex_item:nth-child(4){background: #ffaaaa;}
+
+
+#align_items .flex_container{
+	width:600px; 
+	height:300px;
+	margin: 0 auto;
+	background: #aaa;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	_align-items: flex-start; /*수직 방향으로부터 상단에 자식들이 정렬*/
+	_align-items: flex-end;  /*수직 방향으로부터 하단에 자식들이 정렬*/
+	_align-items: center;  /*수직 방향으로부터 중앙에 자식들이 정렬*/
+	align-items: baseline; /*부모영역의 수직방향으로부터 내부박스의 콘텐츠 기준으로 하단에 정렬*/
+	_align-items: stretch;
+}
+
+#align_items .flex_item{width:120px;}
+#align_items .flex_item:nth-child(1){background: #ffaaff; height: 120px; font-size: 36px;}
+#align_items .flex_item:nth-child(2){background: #aaaaff; height: 100px; font-size: 14px;}
+#align_items .flex_item:nth-child(3){background: #aaffff; height: 80px; font-size: 16px;}
+#align_items .flex_item:nth-child(4){background: #ffaaaa; height: 150px; font-size: 24px;}
+#align_items .flex_item:nth-child(5){background: #ffffaa; height: 120px; font-size: 45px;}
+
+
+#align_content .flex_container{
+	width:600px; 
+	height:300px;
+	margin: 0 auto;
+	background: #ddd;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	_align-content: flex-start;/*부모영역을 기준으로 내부박스들을 상단으로 배치*/
+	_align-content: flex-end; /*부모영역을 기준으로 내부박스들을 하단으로 배치*/
+	_align-content: center;   /*부모영역을 기준으로 내부박스들을 수직방향 중앙으로 배치*/
+	_align-content: space-between;  /*부모영역을 기준으로 세로 방향으로 모든 공간을 분배하여 활용*/
+	_align-content: space-around;  /*부모영역을 기준으로 세로 방향으로 모든 공간을 분배하여 활용*/
+	align-content: stretch; /*부모영역을 기준 세로 방향으로 내부 박스의 높이를 분할하여 모든 높이 공간에 배치 */
+
+
+}
+
+#align_content .flex_item{width:180px;}
+#align_content .flex_item:nth-child(1){background: #ffaaff; _height: 120px;}
+#align_content .flex_item:nth-child(2){background: #aaaaff; _height: 100px;}
+#align_content .flex_item:nth-child(3){background: #aaffff; _height: 80px;}
+#align_content .flex_item:nth-child(4){background: #ffaaaa; _height: 150px;}
+#align_content .flex_item:nth-child(5){background: #ffffaa; _height: 120px;}
+
+
+
+#flex_item .flex_container{
+	width:600px; 
+	height:300px;
+	margin: 0 auto;
+	background: #aaa;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-content: stretch;
+}
+
+#flex_item .flex_item{width: auto;height:auto;}
+#flex_item .flex_item:nth-child(1){background: #ffaaff; flex-grow: 1;}
+#flex_item .flex_item:nth-child(2){background: #aaffff; flex-grow: 3;}
+#flex_item .flex_item:nth-child(3){background: #aaaaff; flex-grow: 1;}
+#flex_item .flex_item:nth-child(4){background: #ffaaaa; flex-grow: 2;}
+#flex_item .flex_item:nth-child(5){background: #ffffaa; flex-grow: 1;}
+
+
+
+#flex_shrink .flex_container{
+	width:80%; 
+	height:300px;
+	margin: 0 auto;
+	background: #bbb;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-content: stretch;
+}
+
+#flex_shrink .flex_item{width: 400px; height:auto;}
+#flex_shrink .flex_item:nth-child(1){background: #ffaaff; flex-shrink: 1;}
+#flex_shrink .flex_item:nth-child(2){background: #aaffff; flex-shrink: 2;}
+#flex_shrink .flex_item:nth-child(3){background: #aaaaff; flex-shrink: 0;}
+#flex_shrink .flex_item:nth-child(4){background: #ffaaaa; flex-shrink: 2;}
+#flex_shrink .flex_item:nth-child(5){background: #ffffaa; flex-shrink: 1;}

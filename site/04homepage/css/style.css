@@ -454,8 +454,8 @@ span{color:#ed1c24;}
 		font-size: 22px;padding-top:40px;
 		border-bottom: 1px dotted #bcbec0; margin-bottom:40px;}
 .con_area .photo{position: relative;}
-.con_area .photo img{width: 570px;height: 380px; margin-bottom:40px;}
-.con_area .photo .txt_box{position: absolute; top:0;right:0;width: 600px;}
+.con_area .photo img{display: inline-block; width: 570px; height:380px; margin-bottom:40px;}
+.con_area .photo .txt_box{position: absolute; top:0;right:0;padding-top: 40px;width: 600px; height: 380px;}
 .con_area .photo .txt_box h2{color:#636466;padding-bottom: 20px}
 .con_area .photo .txt_box p{line-height:30px;}
 
