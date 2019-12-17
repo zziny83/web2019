@@ -32,7 +32,7 @@ nav>ul>li:hover>a{background:#fff; color:#6ab3b2; box-shadow:inset 1px 1px 3px #
 .link>ul>li>a>img{padding: 0 5px; }
 
 section{width: 100%; height: auto; background: #ddd;}
-article{width: -webkit-calc(100% - 280px); -moz-width: calc(100% - 280px); width: calc(100% - 280px); 
+article{width: -webkit-calc(100% - 280px); width: -moz-calc(100% - 280px); width: calc(100% - 280px); 
 	height: auto; margin-left:280px;}
 
 .cont-box{width: 25%; height: 220px; float: left; background-size: cover; 

@@ -1,0 +1,98 @@
+@charset "utf-8";
+*{-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+html, body{margin: 0; padding: 0;}
+ul, ol{margin: 0; padding: 0; list-style: none;}
+h1, h2, h3, h4, h5, h6, p{margin: 0;}
+a{text-decoration: none;}
+
+.title{font-size:30px; padding: 20px 0;}
+
+#ex_01 .wrapper{
+	width: 600px; height: 400px;background: #ffffaa;
+	display: grid;
+	_grid-template-columns: 200px 200px 200px;
+	/*grid-template-columns 가로방향으로 몇단을 얼마의 가로사이즈로 가져갈 것인가를 결정하는 선언*/
+	_grid-template-rows:50px 100px;
+	/*grid-template-rows 세로방향으로 각 줄(line)의 높이값을 지정*/
+
+	grid-template-rows:minmax(50px, auto);
+	/*각 자식의 내부 콘텐츠가 영역보다 많을 경우 minmax() 함수를 사용하게 됨. 내부 내용의 최소값과 최대값을 적용하게 되는데 최대값을 auto로 설정하였을 경우, 내부 콘텐츠의 내용만큼 높이값이 자동으로 적용 */
+	_grid-template-columns: 1fr 1fr 1fr;
+	/*fr 단위는 부모영역을 전체로 나누었을 떄 차지하는 범위에 대한 지정이 가능 */
+	grid-template-columns:repeat(3, 1fr);
+	/*repeat() 함수는 반복 진행할 그리드 수의 지정, 얼마만큼의 비율을 가져갈 것인가를 설정*/
+	_grid-column-gap:40px;
+	/*가로방향인 열 단위 그리드의 사이 간격을 조정*/
+	_grid-row-gap:20px;
+	/*세로방향인 줄 단위 그리드의 사이 간격을 조정*/
+	grid-gap: 30px; /*동일한 간격 부여 시*/
+	grid-gap: 20px 40px; /*grid-gap은 두가지 여백 속성을 갖게 되는데, 첫번째 지정한 속성값이 grid-row-gap, 두번째 지정한 속성값이 grid-column-gap*/
+
+
+
+}
+
+#ex_01 .wrapper .item{background: #aaa;}
+#ex_01 .wrapper .item:nth-child(2n){background: #ffaaff;}
+
+
+#ex_02 .wrapper{width: 600px;height: 400px;display:grid;
+	grid-template-columns: repeat(3, 1fr); 
+}
+#ex_02 .wrapper .item{width: auto; height: auto;}
+#ex_02 .wrapper .item:nth-child(1){background: #ffaaff;}
+#ex_02 .wrapper .item:nth-child(2){background: #aaaaff;}
+#ex_02 .wrapper .item:nth-child(3){background: #aaffff;}
+#ex_02 .wrapper .item:nth-child(4){background: #ffffaa; 
+	/*grid-row-start:2; grid-row-end:4;
+	grid-column-start:3; grid-column-end:4;*/
+	grid-row:2/4; grid-column:3/4;
+}
+#ex_02 .wrapper .item:nth-child(5){background: #ffaaff;}
+#ex_02 .wrapper .item:nth-child(6){background: #ffaaaa;}
+
+
+.wrapper01{width: 600px;height: 600px;background: #ccc;	
+	display: grid; grid-template-columns:repeat(3, 1fr);}
+
+.wrapper01 .item .txt{display: table; width: 100%; height: 100%; }
+.wrapper01 .item .txt p{display: table-cell; font-size: 36px; text-align: center; vertical-align: middle;}
+
+.wrapper01 .item:nth-child(1){background: #ffaaff;grid-row:1/2; grid-column:1/3;}
+.wrapper01 .item:nth-child(2){background: #aaaaff;grid-row:1/3; grid-column:3/4;}
+.wrapper01 .item:nth-child(3){background: #aaffff;grid-row:3/4; grid-column:2/4;}
+.wrapper01 .item:nth-child(4){background: #aaffaa;grid-row:2/4; grid-column:1/2;}
+.wrapper01 .item:nth-child(5){background: #ffffaa;grid-row:2/3; grid-column:2/3;}
+
+.wrapper01:hover .item:nth-child(1){background: #ffaaff;grid-row:1/2; grid-column:2/4;}
+.wrapper01:hover .item:nth-child(2){background: #aaaaff;grid-row:2/4; grid-column:3/4;}
+.wrapper01:hover .item:nth-child(3){background: #aaffff;grid-row:3/4; grid-column:1/3;}
+.wrapper01:hover .item:nth-child(4){background: #aaffaa;grid-row:1/3; grid-column:1/2;}
+.wrapper01 .item:nth-child(5){background: #ffffaa;grid-row:2/3; grid-column:2/3;}
+
+
+.wrapper02{width: 820px;height: 820px;display: grid;
+	grid-template-columns: 160px 600px 40px;
+	grid-template-rows:250px 300px 125px 125px;
+	border: 10px solid #000;
+}
+.wrapper02 .item{width: auto;height: auto;}
+.wrapper02 .item:nth-child(1){background: white; border: 10px solid #000;grid-row:1/2; grid-column:1/2;}
+.wrapper02 .item:nth-child(2){background: red; border: 10px solid #000; grid-row:1/3; grid-column:2/4;}
+.wrapper02 .item:nth-child(3){background: white; border: 10px solid #000; grid-row:2/3; grid-column:1/2}
+.wrapper02 .item:nth-child(4){background: blue; border: 10px solid #000; grid-row:3/5; grid-column:1/2}
+.wrapper02 .item:nth-child(5){background: white; border: 10px solid #000; grid-row:3/5; grid-column:2/3}
+.wrapper02 .item:nth-child(6){background: white; border: 10px solid #000; grid-row:3/4; grid-column:3/4;}
+.wrapper02 .item:nth-child(7){background: yellow; border: 10px solid #000;grid-row:4/5; grid-column:3/4;}
+
+
+.wrapper03{width: 820px;height: 820px;display: grid;
+		border: 10px solid #000;}
+.wrapper03 .item{width: auto;height: auto;}
+.wrapper03 .item:nth-child(1){width: 160px;height: 250px;background: white; border: 10px solid #000;grid-row:1/2; grid-column:1/2;}
+.wrapper03 .item:nth-child(2){width: 160px;height: 300px;background: white; border: 10px solid #000;grid-row:2/3; grid-column:1/2;}
+.wrapper03 .item:nth-child(3){width: 640px;height: 550px;background: red; border: 10px solid #000;grid-row:1/3; grid-column:2/4;}
+.wrapper03 .item:nth-child(4){width: 160px;height: 250px;background: blue; border: 10px solid #000;grid-row:3/5; grid-column:1/2;}
+.wrapper03 .item:nth-child(5){width: 600px;height: 250px;background: white; border: 10px solid #000;grid-row:3/5; grid-column:2/3;}
+.wrapper03 .item:nth-child(6){width: 40px;height: 125px;background: white; border: 10px solid #000;grid-row:3/4; grid-column:3/4;}
+.wrapper03 .item:nth-child(7){width: 40px;height: 125px;background: yellow; border: 10px solid #000;grid-row:4/5; grid-column:3/4;}

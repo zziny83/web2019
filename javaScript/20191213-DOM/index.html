@@ -4,11 +4,38 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 		<meta charset="UTF-8">
 		<title>Javascript - DOM</title>
-
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/script.js"></script>
 	</head>
 	<body>
+		<h2 id="title">문서객체 모델 테스트</h2>
+		<h3>직접 선택자(원거리 선택자)</h3>
+		<div id="menu">
+			<p class="list">회사소개</p>
+			<p class="list">회사연혁</p>
+			<p class="list">CEO 소개</p>
+			<p class="list">회사위치</p>
+		</div>
+		<h3>간접 선택자(근거리 선택자, 인접 관계 선택자)</h3>
+		<ul>
+			<li class="m_list"><a href="#">About</a></li>
+			<li class="m_list"><a href="#">Product</a></li>
+			<li class="m_list"><a href="#">Portfolio</a></li>
+			<li class="m_list"><a href="#">Notice</a></li>
+		</ul>
 		
+		<h3>속성 변경 및 삭제, 추가</h3>
+		<img id="ch_img" src="img/boy.png" alt="소년 이미지" class="img01">
 
-		<script src="js/script.js"></script>
+		<h3>innerHTML : 선택 요소 기준의 내부 문서의 내용을 변경, 생성, 삭제</h3>
+		<div id="section_01">
+			<a href="">상세 페이지 보기</a>
+		</div>
+
+		<h3>이벤트 핸들러 적용하기(click, mouseover, mouseout)</h3>
+		<img  id="card_img" src="img/ace.png" alt="카드 앞면">
+
+
+
 	</body>
 </html>
