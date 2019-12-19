@@ -42,6 +42,188 @@
 			</div>
 		</div>
 
+		<div class="container">
+			<div class="row">
+				<div class="col"><div class="b_box"></div></div>
+				<div class="col"><div class="b_box"></div></div>
+				<div class="col"><div class="b_box"></div></div>
+				<div class="col"><div class="b_box"></div></div>
+				<div class="col"><div class="b_box"></div></div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-3 col-lg-4 col-md-6">
+					<div class="d_box">1</div>
+				</div>
+				<div class="col-xl-3 col-lg-4 col-md-6">
+					<div class="d_box">2</div>
+				</div>
+				<div class="col-xl-3 col-lg-4 col-md-6">
+					<div class="d_box">3</div>
+				</div>
+				<div class="col-xl-3 col-lg-4 col-md-6 d-block d-lg-none d-xl-block">
+					<div class="d_box">4</div>
+				</div>
+			</div>	
+		</div>
+		<!-- 
+		.d-block :  전 구간에서 보여줘라
+		.d-lg-none : 992px 이상의 구간에서 감춰라
+		.d-xl-block : 1200px 이상의 구간에서는 보여줘라
+ 		-->
+
+		<div class="container">
+			<p class="text-primary">text - 파란색 계열(primary)</p>
+			<p class="text-info">text - 청록색 계열(info)</p>
+			<p class="text-success">text - 녹색 계열(success)</p>
+			<p class="text-warning">text - 노란색 계열(warning)</p>
+			<p class="text-danger">text - 빨간색 계열(danger)</p>
+			<p class="text-black-50">text - 검정색 계열 + opacity 50%</p>
+		</div>
+
+		<div class="container">
+			<div class="table-responsive">
+				<table class="table table-striped table-bordered">
+					<thead>
+						<tr>
+							<th style="min-width:100px;">구분</th>
+							<th style="min-width:400px;">제목</th>
+							<th style="min-width:200px;">날짜</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>게시글 제목1 게시글 제목1게시글 제목1게시글 제목1게시글 제목1게시글 제목1</td>
+							<td>게시글 날짜1</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>게시글 제목2 게시글 제목2게시글 제목2게시글 제목2게시글 제목2</td>
+							<td>게시글 날짜2</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>게시글 제목3게시글 제목3게시글 제목3게시글 제목3게시글 제목3게시글 제목3게시글 제목3게시글 제목3</td>
+							<td>게시글 날짜3</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+		<div class="container">
+			<img class="rounded" src="img/sub_02.jpg" alt="" style="width:360px;">
+		</div>
+		<div class="container">
+			<img class="rounded-circle" src="img/sub_02.jpg" alt="" style="width:360px;">
+		</div>
+		<div class="container">
+			<img class="rounded img-thumbnail" src="img/sub_02.jpg" alt="" style="width:360px;">
+		</div>
+		
+		<div class="container">
+			<div class="alert alert-danger">alert-danger</div>
+			<div class="alert alert-warning">alert-warning</div>
+		</div>
+
+		<div class="container">
+			<div class="alert alert-danger alert-dismiss fade show">
+				<button type="button" class="close" data-dismiss="alert">×</button> 
+				<!-- data-dismiss="alert" 부모영역의 .alert 창을 사라지도록 하는 역할을 담당	-->
+				<span>alert-danger</span>
+			</div>
+		</div>
+
+		<div class="container">
+			<h3>버튼 색상 조정</h3>
+			<button class="btn">btn</button>
+			<button class="btn btn-primary">btn-primary</button>
+			<button class="btn btn-info">btn-info</button>
+		</div>
+
+		<div class="container">
+			<h3>버튼 아웃라인 색상 조정</h3>
+			<button class="btn">btn</button>
+			<button class="btn btn-outline-primary">btn-primary</button>
+			<button class="btn btn-outline-info">btn-info</button>
+		</div>
+
+		<div class="container">
+			<h3>버튼 그룹화 - 가로방향</h3>
+			<div class="btn-group btn-group-sm">
+				<button class="btn btn-outline-primary">btn-primary</button>
+				<button class="btn btn-outline-info">btn-info</button>
+				<button class="btn btn-outline-success">btn-success</button>
+			</div>
+		</div>
+
+		<div class="container">
+			<h3>버튼 그룹화 - 세로방향</h3>
+			<div class="btn-group-vertical">
+				<button class="btn btn-outline-primary">btn-primary</button>
+				<button class="btn btn-outline-info">btn-info</button>
+				<button class="btn btn-outline-success">btn-success</button>
+			</div>
+		</div>
+
+		<div class="container" style="height:300px;">
+			<h3>버튼 그룹화 - 가로방향 + 드롭다운 메뉴</h3>
+			<div class="btn-group btn-group-md">
+				<button class="btn btn-info">About</button>
+				<button class="btn btn-info">Project</button>
+				<div class="btn-group">
+					<!-- data-toggle="dropdown" 클릭시 보이지 않는 하단 메뉴를 보여준다.(dropdown-menu) 
+						toggle : 보이는 부분 -> 감추기 / 감춰진 부분 -> 보이기		-->
+					<button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Portfolio</button>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="">디자인</a>
+						<a class="dropdown-item" href="">퍼블리싱</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="container" style="height:300px;">
+			<div class="row">
+				<div class="col-sm-3 card" style="padding-left:0; padding-right:0;">
+					<img src="img/img_01.jpg" alt="라푼젤" class="card-img-top">	<!-- .card-img-top : 카드박스라는 공간 내부 상단에 구성하겠다는 선언 -->
+					<div class="card-body">
+						<h4 class="card-title">라푼젤</h4>
+						<h5 class="card-subtitle">세상밖으로의 탐험</h5>
+						<p class="card-text">18년 동안 나무집 위에서 갇혀 지내던 라푼젤이 세상 밖으로의 탐험이 시작된다.</p>
+						<a href="#" class="btn btn-primary">영화 사이트 바로가기</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		
+		<div class="container-fluid" style="padding:0;">
+			<div class="header">
+				<nav class="navbar bg-dark navbar-expand-sm navbar-dark"><!-- .navbar : 네비게이션 메뉴를 구성 선언-->
+					<a href="#" class="navbar-brand">Brand</a>
+					<!-- data-toggle="collapse" : 지정한 반응형 공간 이하로 화면이 적용되었을 떄 기존 메뉴를 숨김처리하겠다는 선언 
+					data-target="#collapseNav" : 하단에 나오게 될 메뉴를 대상으로 지정 -->
+					<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#collapseNav">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="collapseNav">
+						<ul class="navbar-nav">
+							<li class="nav-item"><a href="" class="nav-link">알라딘</a></li>
+							<li class="nav-item"><a href="" class="nav-link">라푼젤</a></li>
+							<li class="nav-item"><a href="" class="nav-link">미녀와 야수</a></li>
+						</ul>
+					</div>
+
+
+				</nav>
+			</div>
+		</div>
 
 
 

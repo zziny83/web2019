@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+/*common CSS*/
+*{-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+html, body{margin: 0;padding: 0;}
+header, section, article, aside, nav, footer{display: block;}
+header:after, section:after, article:after, aside:after, nav:after, footer:after{content:""; display: block;c lear: both;}
+ul, ol{margin: 0;padding: 0;list-style: none;}
+h1, h2, h3, h4, h5, h6, p{margin: 0;}
+a{text-decoration: none;}
+.clear{clear: both;}
