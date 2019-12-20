@@ -35,7 +35,7 @@ section#cont_part{width: -webkit-calc(100% - 300px); width: -moz-calc(100% - 300
 	margin-left:300px; }
 
 #cont_part .tell{background: #333333; line-height: 40px; color:#fff; font-size:12px; padding-left:40px;}
-#cont_part article{width: 100%;height: auto;background: #ccc; }
+#cont_part article{width: 100%;height: auto;_background: #ccc; }
 .cont-box{width: 20%;height: 250px; float: left;background-size: cover; 
 	background-repeat:no-repeat;  background-position: 50% 50%;}
 .cont-box .txt{padding: 45px}
