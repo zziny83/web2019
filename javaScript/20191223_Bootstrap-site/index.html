@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0; user-scalable=no">
+	<meta charset="UTF-8">
+	<title>BS-Website</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+	<div class="header">
+		<!-- .navbar : 네비게이션을 구성 / .navbar-expand-md : 메뉴의 펼쳐진 구성을 768px 이상의 구간에서만 유지 
+			.navbar-dark, .bg-dark : 어두운 회색 공간에 메뉴바를 구성  / .fixed-top : 상단 메뉴 고정 (position:fixed) -->
+		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+			<!-- .navbar-brand: 로고 영역의 공간을 구성 -->
+	        <a class="navbar-brand" href="#">LOGO</a>
+	        <!-- .navbar-toggler : 반응형 메뉴로 변경되었을 때, 나타나도록 설정 / data-toggle="collapse" : 768px 이상의 구간에서 보이지 않도록 설정  / data-target="#navbarCollapse" : 버튼 클릭시 무엇을 열어줄 것인가를 지정.(id="navbarCollapse")의 영역 -->
+	        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+				<!-- .navbar-toggler-icon : 부트스트랩에서 제공하는 메뉴 아이콘 형태 -->
+	        	<span class="navbar-toggler-icon"></span>
+	        </button>
+	        <!-- .collapse : 반응형이 적용되는 시점에서만 (display:none)  / .navbar-collapse : 반응형에서 제거했다가 상단의 버튼 클릭시 보이도록 설정  
+	        ※ 주의 사항 : 상단 버튼에 들어가있는 data-target의 속성값과 클릭시 펼쳐지게될 네비게이션의 id 속성값과 일치 -->
+	        <div class="collapse navbar-collapse" id="navbarCollapse">
+	        	<!-- .navbar-nav : 메뉴 파트 구성 -->
+		        <ul class="navbar-nav mr-auto">
+		        	<!-- .nav-item : 세부 메뉴 구성 -->
+		            <li class="nav-item active">
+						<!-- .nav-link : 링크 영역 구성  -->
+		              	<a class="nav-link" href="#">Home</a>
+		            </li>
+		            <li class="nav-item">
+		              	<a class="nav-link" href="#">Features</a>
+		            </li>
+		            <li class="nav-item">
+		              	<a class="nav-link" href="#">Freebies</a>
+		            </li>
+		            <li class="nav-item">
+		              	<a class="nav-link" href="#">Log In</a>
+		            </li>                               
+		        </ul>
+		    </div>
+	     	</nav>
+	     	<div class="container align-center">
+		     	<h1><strong>Display your web design</strong><br>in a web browser</h1>
+			  	<h4 class="silver hidden-xs">Fastest way to present your design and get feedback from your clients!</h4>        
+			 	 Upload Project   
+			 	.d-none : 전체 화면상에서 display:none /
+			  	<div class="silver small-info margin-top-big d-none d-md-block"></div>          
+			   <img src="images/drop-icon.png">
+			   Drop here or select your project<br>prepared in the PNG or JPG format
+			</div>
+		</div>
+	</div>
+
+<!-- 첫번째 섹션  -->
+		<div class="box-padding-big grey-bg"> 
+			<div class="container">  <!-- 해상도 1200px 이상에서는 width:1140px + padding-left:15px + padding-right:15px --> 
+				<div class="row">  margin-left:-15px + margin-right:-15px; => 부모 영역인 .container 또는 .container-fluid영역의 좌우 패딩 값을 상쇄 
+					<div class="col-md-5 info-big"> <!-- 공간분할 .col-md-5 : 해상도 가로 768px 이상의 구간에서 width:41.66% + pa -->
+						<h2>Fastest way to<br><strong>present your design</strong></h2>
+						<p>Symu is an easy to use tool for web designers. With the help of our system you can present your projects in a browser for free. It is all very easy!</p>
+						<p><strong>Drop your project anywhere</strong><br>Symu will prepare a mockup of your website for you!</p>
+
+						<img src="images/symu-panel-1.png">
+					</div>
+				</div>
+			</div>
+		</div>
+
+<!-- 두번째 섹션  -->
+		<div class="box-padding-big grey-bg">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-5 info-big">
+						<img src="images/symu-panel-2.png">
+						<h2>The simplest way to<br><strong>get feedback from your clients!</strong></h2>
+						<p><strong>You can add a comment anywhere</strong> on a project, this is a fast and easy way to gather input and proposed changes from your client. Click anywhere on a project and leave your thoughts.</p>
+						<p><strong>Every added comment becomes a task! </strong> Thanks to this solution you can easily mark the changes you have made.</p>
+					</div>
+				</div>
+			</div>			
+		</div>
+
+<!-- 세번째 섹션  -->
+		<div class="box-padding-big grey-bg">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-5 info-big">
+						<h2>Support for<br><strong>Responsive projects</strong></h2>
+						<p>Projects added to Symu are automatically checked whether they are mobile ready.</p>
+						<p>The program will divide your files into responsive versions on its own! You have the option to view the projects in either normal or responsive modes!</p>
+						<img src="images/home-panel-3.jpg">
+					</div>
+				</div>
+			</div>			
+		</div>
+
+<!-- 네번째 섹션  -->	
+		<!-- .d-none .d-md-block : 전체를 display:none 선언 + 768px의 이상 해상도에서는 보여주겠다는 선언  -->
+		<div class="box-padding-big white-bg d-none d-md-block">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6"> <!-- 768px 이상의 구간에서 width:50%; -->
+						<img src="images/envelope-icon.jpg" style="float:left">  
+						<h2 class="icon-title">Email<br><strong>notifications</strong></h2>
+						<p>An email notification will be sent when your client comments or opens a project. You will know when a client recieves the projects and if he has seen it!</p>
+					</div>
+					<div class="col-md-6"> <!-- 768px 이상의 구간에서 width:50%; -->
+						<img src="images/lock-icon.jpg" style="float:left">　　
+						<h2 class="icon-title">Project<br><strong>protection</strong></h2>
+						<p>Your projects will be perfectly safe, Symu uses SSL encryption and every project added receives a unique link. Additionally you have the option to secure your project with a password.</p>
+					</div>
+				</div>
+			</div>
+		</div>	
+
+
+	
+</body>
+</html>

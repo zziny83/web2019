@@ -18,3 +18,9 @@ float:left; margin: 0 10px;}
 
 .po_out{width: 300px; height: 300px; margin:100px; background: #aaffff; position: relative;}
 .po_in{width: 100px; height: 100px; position: absolute; top:100px; left:100px; background: #ffaaff; transition:background 1s;}
+
+.slide{width:600px;height: 300px; position: relative; overflow: hidden;}
+.slide li{position: absolute; top:0;left:0;width: 100%;height: 100%;}
+.slide li img{width: 100%; }
+
+.in_card{background: #aaffff;}
