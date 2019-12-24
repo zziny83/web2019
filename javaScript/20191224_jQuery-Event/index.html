@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta charset="UTF-8">
+		<title>Event</title>
+		<link rel="stylesheet" href="css/style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="js/script.js"></script>
+	</head>
+	<body>
+		<div id="header"></div>
+		<div id="section">
+			<button class="click_ev">click</button>
+			<a class="a_click" href="javascript:void(0);">클릭 이벤트 걸기</a>
+			<span id="detail" class="more">더보기</span>
+			<br>
+			<img class="card_img" src="img/ace.png" alt="">
+
+			<h3>입력요소 이벤트 : focus() <-> blur()</h3>
+			<div class="input_ev">
+				<p>
+					<label for="userID">아이디 : </label>
+					<input type="text" placeholder="아이디를 입력하세요" name="userID" id="user_id">
+				</p>
+			</div>
+			<h3>change() 이벤트 : 대상 요소의 값이 변동되었을 때 이벤트가 발생</h3>
+			<div class="change_ev">
+				<h4>가고 싶은 군내 여행지</h4>
+				<select id="ch_ev">
+					<optgroup>
+						<option value="부산">부산</option>
+						<option value="경주">경주</option>
+						<option value="속초">속초</option>
+						<option value="제주">제주</option>
+						<option value="목포">목포</option>
+						<option value="춘천">춘천</option>
+					</optgroup>
+				</select>
+				<p class="fav_trip"></p>
+			</div>
+
+			<h3>scroll() 이벤트 : 마우스 휠 또는 스크롤바를 움직였을 때 이벤트가 발생 </h3>
+			<div class="scroll_ev">
+				<p class="cur_scroll_loc">현재 스크롤의 위치 값: 
+					<span></span></p>
+			</div>
+
+
+			<header id="mid_header">
+				<div class="logo">
+					<a href="">LOGO</a>
+				</div>
+				<ul>
+					<li><a href="sub_01.html">MENU-01</a></li>
+					<li><a href="">MENU-02</a></li>
+					<li><a href="">MENU-03</a></li>
+					<li><a href="">MENU-04</a></li>
+					<li><a href="">MENU-05</a></li>
+				</ul>
+			</header>
+
+
+			<h3>resize() 이벤트 : 화면의 사이즈가 변경(최소 1px이라도 변동)되면 이벤트 발생</h3>
+			<div class="resizie_ev">
+				<p class="cur_view">현재 화면 사이즈 : <span></span></p>
+			</div>
+
+
+			<h3>index() 메서드 : 코딩 정렬(형제 요소)상 인덱스번호로 접근하는 방법 </h3>
+			<div class="index_method">
+				<input type="checkbox" value="남이섬">&nbsp;남이섬&nbsp;
+				<input type="checkbox" value="보길도">&nbsp;보길도&nbsp;
+				<input type="checkbox" value="경포대">&nbsp;경포대&nbsp;
+				<input type="checkbox" value="설악산">&nbsp;설악산&nbsp;
+				<input type="checkbox" value="한라산">&nbsp;한라산&nbsp;
+			</div>
+			<p class="hash_group"></p>
+			<hr>
+
+			<div class="tab_box">
+				<ul class="tab_btn">
+					<li class="active_btn" rel="cont01"><a href="#">tab_01</a></li>
+					<li rel="cont02"><a href="#">tab_02</a></li>
+					<li rel="cont03"><a href="javascript:void(0);">tab_03</a></li>
+				</ul>
+				<div class="tab_cont">
+					<div class="cont01 active_cont">tab_cont01</div>
+					<div class="cont02">tab_cont02</div>
+					<div class="cont03">tab_cont03</div>
+				</div>
+			</div>
+			
+
+
+			
+
+		</div>
+		<div id="footer"></div>
+		
+	</body>
+</html>
