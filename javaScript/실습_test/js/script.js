@@ -66,12 +66,6 @@ function subNext(){
 
 
 
-
-
-
-
-
-
 // var $img = ["img1.jpg", "img2.jpg", "img3.jpg", "img4.jpg", "img5.jpg", "img6.jpg", "img7.jpg", "img8.jpg", "img9.jpg"]
 // var n = 0;
 // function next(){
@@ -82,3 +76,12 @@ function subNext(){
 // 	n=0;
 // 	}
 // }
+
+
+
+$(document).ready(function(){
+	$("#select").css({"fontSize":"28px", "background":"#ffff00"});
+
+
+
+});
