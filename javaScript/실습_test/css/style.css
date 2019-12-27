@@ -6,3 +6,33 @@
 .test_10 p{padding: 20px; font-size: 16px; background: #ffbb55; margin-bottom:4px;}
 .test_11 p{padding: 20px; font-size: 16px; background: #f2f2f2; margin-bottom:4px;}
 .test_11 p.highlight{background: yellow;}
+
+.test_15 h4{padding:15px; background:#ffaaff;}
+.test_15 p{padding: 15px; background: #F0E68C;margin-bottom:4px;}
+.test_16 p{padding: 15px; background: #F0E68C;margin-bottom:4px;}
+
+.test_17 h4{padding:15px; background:#ffaaff;}
+.test_17 p{padding: 15px; background: #F0E68C;margin-bottom:4px;}
+
+.test_18 h4{padding:15px; background:#ffaaff;}
+.test_18 p{padding: 15px; background: #F0E68C;margin-bottom:4px;}
+
+.test_19 img{position: relative;}
+.test_20 img{width: 200px;}
+.test_21 img{width: 120px;}
+.test_22 .img_frame{font-size:0;}
+.test_22 img{width: 300px;}
+
+.test_23 .img_frame{font-size:0;}
+.test_23 img{width: 300px;}
+
+.test_24 img{width: 300px; margin:20px; transition:1s;}
+.test_24 img.effect{box-shadow:0 0 8px #55ffff;}
+
+.test_25 img{width: 300px; margin:20px; transition:1s;}
+.test_25 img.effect{box-shadow:0 0 8px #ffff00;}
+
+.test_26 .img_frame{font-size:0;}
+.test_26 img{width: 200px;}
+
+.active{background: #ffaaff;}
