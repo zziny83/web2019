@@ -232,10 +232,12 @@ $(document).ready(function(){
 	$(".ho_01").before($hb);
 
 
-	var $city = $("input .lo_03");
+	var $city = $(".lo_03").val();
 	console.log($city);
+	$(".lo_03").val("대전");
 
 
+	
 
 
 

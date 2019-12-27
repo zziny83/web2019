@@ -36,3 +36,7 @@
 .test_26 img{width: 200px;}
 
 .active{background: #ffaaff;}
+
+.main{width: 100%; height: 40px; background: #ccc;}
+.main li{float: left;line-height: 40px;}
+.main li a{display: block; text-align: center; text-decoration: none; list-style: none;}
