@@ -237,6 +237,31 @@ $(document).ready(function(){
 	$(".lo_03").val("대전");
 
 
+	$(".main>li").click(function(){
+		var $has = $(this).hasClass("active");
+		console.log($has);
+		if($has == true){
+			$(".main>li").removeClass("active");
+			$(".main>li").find("ul").stop().slideUp();
+		}else{
+			$(".main>li").removeClass("active");
+			$(".main>li").find("ul").stop().slideUp();
+			$(this).addClass("active");
+			$(this).find("ul").stop().slideDown();
+		}
+		return false;
+	});
+
+	$(".main>li").hover(function(){
+		$(this).css("background", "red");
+		$(this).find("ul").stop().slideDown();
+	}, function(){
+		$(this).css("background", "transparent");
+		$(".main>li").find("ul").stop().slideUp();
+	});
+
+
+
 	
 
 

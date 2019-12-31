@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta charset="UTF-8">
+		<title>jQuery- 상품 재배열</title>
+		<link rel="stylesheet" href="css/style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="js/script.js"></script>
+	</head>
+	<body>
+		<div class="total_pd">
+			<div class="sort_button">
+				<!-- 클릭이벤트 -->
+				<button class="date_sort">최신순</button>
+				<button class="low_sort">낮은 가격순</button>
+				<button class="high_sort">높은 가격순</button>
+				<button class="fav_sort">인기순</button>
+
+				<!-- change 이벤트 -->
+				<select class="sort">
+					<option>선택</option>
+					<option value="date">최신순&nbsp;</option>
+					<option value="low">저가순&nbsp;</option>
+					<option value="high">고가순&nbsp;</option>
+					<option value="fav">인기순&nbsp;</option>
+				</select>
+			</div>
+
+			<div class="pd_frame">
+				<!-- <div class="pd_box">
+					<div class="pd_photo">
+						<img src="img/img1.jpg">
+					</div>
+					<div class="pd_info">
+						<h3 class="pd_title">title</h3>
+						<p class="pd_text">context</p>
+						<div class="pd_etc">
+							<span class="pd_price">가격정보</span>
+							<span class="pd_date">업데이트 날짜</span>
+						</div>
+						<p class="fav">좋아요&nbsp;<span>10</span></p>
+					</div>
+				</div> -->
+			</div>
+			<div class="pager">
+				<ul>
+				<!-- 	<li>1</li> index:0
+					<li>2</li> index:1
+					<li>3</li> index:2 -->
+				</ul>
+			</div>
+		</div>
+
+		
+	</body>
+</html>

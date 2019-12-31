@@ -1,5 +1,9 @@
 @charset "utf-8";
 
+*{-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+html, body{margin: 0;padding: 0;}
+ul, ol{margin: 0;padding: 0; list-style: none;}
+a{text-decoration: none;}
 .kakao_bx{width: 225px;float:left;}
 #result_06{width: 800px; height: auto;}
 
@@ -35,8 +39,13 @@
 .test_26 .img_frame{font-size:0;}
 .test_26 img{width: 200px;}
 
-.active{background: #ffaaff;}
+.active{background: red;}
 
-.main{width: 100%; height: 40px; background: #ccc;}
-.main li{float: left;line-height: 40px;}
-.main li a{display: block; text-align: center; text-decoration: none; list-style: none;}
+.main{width: 100%; height: 60px; background: #ccc; text-align: center;margin-bottom:200px;}
+.main>li{display: inline-block;line-height: 60px; margin: 0 30px; vertical-align: top;}
+.main>li>a{display: block; font-size:16px; color:#555; padding: 0 50px; }
+.main>li>ul{display: none;}
+.main>li>ul>li{}
+.main>li>ul>li>a{display: block; font-size:15px; color:#fff; background: #ccc; line-height:40px;}
+
+

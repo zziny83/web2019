@@ -125,6 +125,21 @@ $(document).ready(function(){
 	}, 3000);
 
 
+	var n = 0;  //eq(index) 번호로 순차적으로 접근하기 위한 초기값 선언
+	var depth = 2;  //레이어 상의 z-index값을 올려서 해당하는 순서를 배치하기 위한 초기값 선언
+	
+	(function ani(){
+		$(".slide_05 li").eq(n).css("z-index", depth++).fadeOut(0);
+		$(".slide_05 li").eq(n).delay(1000).fadeIn(500, function(){
+			if(n == 3){
+				n=0;
+			}else{
+				n++;
+			}
+			ani();  //재귀함수 - 본인을 호출하여 반복적으로 수행하도록 적용하는 함수 
+		});
+	})();  // () : 빈함수 - 호출 값 없이 함수문을 구동하는 방식(장점 : 메모리를 차지하지 않기 때문에 바로 브라우저가 열리자 마자 구동되며 우선적으로 함수문에 접근가능)
+
 
 
 

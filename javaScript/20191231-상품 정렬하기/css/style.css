@@ -1,0 +1,41 @@
+@charset "utf-8";
+ *{-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+
+html, body{margin: 0; padding: 0;}
+header, section, article, aside, nav, footer{display: block;}
+header:after, section:after, article:after, aside:after, nav:after, footer:after{content:""; display: block; clear: both;}
+ul, ol{margin: 0;padding: 0;list-style: none;}
+h1, h2, h3, h4, h5, h6, p{margin: 0;}
+a{text-decoration: none;}
+.clear{clear: both;}
+
+.total_pd{width: 80%; height: auto; margin:0 auto;}
+.sort_button{padding:20px 0; }
+.sort_button button{padding:10px 20px; background:#fff; border: 1px solid #777; border-radius: 4px; cursor: pointer;}
+.sort_button button:hover{background: #ddd;}
+
+.sort{padding:10px 20px; background:#fff; border: 1px solid #777; border-radius: 4px; cursor: pointer; 
+	background: url(../img/arrow-down.png) no-repeat 90% 50%; background-size: auto 16px; -webkit-appearance:none; appearance:none;}
+
+
+.pd_frame{width: 100%;height: auto;background: #fff; padding: 20px 20px 0; border: 1px solid #bbb; border-radius: 4px;}
+.pd_frame:after{content:""; display: block;clear: both;}
+.pd_frame .pd_box{width: calc(25% - 20px); margin:0 10px 20px; border-bottom:1px solid #ccc; padding: 10px; float: left;}
+.pd_frame .pd_box .pd_photo{width: 100%;height: 200px; overflow: hidden; position: relative;}
+.pd_frame .pd_box .pd_photo img{height: 100%; position: absolute;top:50%;left:50%; transform: translate(-50%, -50%);}
+.pd_frame .pd_box .pd_info{width: 100%;height: auto;}
+.pd_frame .pd_box .pd_info .pd_title{font-size:20px; color:#555; padding:10px 0 0; }
+.pd_frame .pd_box .pd_info .pd_text{font-size:16px; color:#888; padding:10px 0;}
+.pd_frame .pd_box .pd_info .pd_etc{width: 100%;height: auto; border-top:1px solid #ccc;}
+.pd_frame .pd_box .pd_info .pd_etc:after{content:""; display: block;clear: both;}
+.pd_frame .pd_box .pd_info .pd_etc .pd_price{float: left; font-size:16px;}
+.pd_frame .pd_box .pd_info .pd_etc .pd_date{float: right; font-size:14px;}
+.pd_frame .pd_box .pd_info .fav{text-align:right; font-size:14px;}
+.pd_frame .pd_box .pd_info .fav span{color:#ff0000;}
+
+
+.pager{width: 100%;height: auto; padding: 20px 0;}
+.pager ul{text-align: center; font-size:0;}
+.pager ul li{display: inline-block; padding: 0 5px; border-left:1px solid #ccc; font-size: 13px; color:#777; cursor: pointer;}
+.pager ul li:first-child{border:none;}
+.pager ul li.active{color:#ff0000;}
