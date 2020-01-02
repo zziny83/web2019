@@ -49,3 +49,98 @@ a{text-decoration: none;}
 .main>li>ul>li>a{display: block; font-size:15px; color:#fff; background: #ccc; line-height:40px;}
 
 
+.ch_03_frame{width:100%; height: 350px;}
+.ch_03_frame .ch_03_img{width:20%; height:160px; float:left; display:inline-block; position:relative; transition:all 2s;}
+.ch_03_frame .ch_03_img:nth-child(1){background:url(../img/sub-img-010.jpg) no-repeat 50% 50%; background-size:cover;}
+.ch_03_frame .ch_03_img:nth-child(2){background:url(../img/sub-img-011.jpg) no-repeat 50% 50%; background-size:cover;}
+.ch_03_frame .ch_03_img:nth-child(3){background:url(../img/sub-img-012.jpg) no-repeat 50% 50%; background-size:cover;}
+.ch_03_frame .ch_03_img:nth-child(4){background:url(../img/sub-img-013.jpg) no-repeat 50% 50%; background-size:cover;}
+.ch_03_frame .ch_03_img:nth-child(5){background:url(../img/sub-img-014.jpg) no-repeat 50% 50%; background-size:cover;}
+.ch_03_frame .ch_03_img:nth-child(6){background:url(../img/sub-img-015.jpg) no-repeat 50% 50%; background-size:cover;}
+.ch_03_frame .ch_03_img:nth-child(7){background:url(../img/sub-img-016.jpg) no-repeat 50% 50%; background-size:cover;}
+.ch_03_frame .ch_03_img:nth-child(8){background:url(../img/sub-img-017.jpg) no-repeat 50% 50%; background-size:cover;}
+.ch_03_img span{position:absolute; width:24px; height:24px; display:block; line-height:24px; text-align:center; top:0; right:0;
+		color:#fff; cursor:pointer; line-height:1;}
+.ch_03_img span:hover{color:#ff0000;}
+
+
+.ch_04_frame{height:180px;}
+.ch_04_01{width:100%; position:relative;}
+.ch_04_01 img{width:180px; position:absolute; margin-left:200px; left:0; top:0;}
+
+
+#ex_05{width:1200px; height:380px; margin:0 auto;}
+.tab_btn{width:100%; height:59px; font-size:0; border-bottom:1px solid #999; position:relative;}
+.tab_btn>div{width:50%; height:100%; display:inline-block; font-size:18px; line-height:59px; text-align:center;		cursor:pointer;}
+.activeBtn{/*background:#000;*/ color:#fff;}
+.bg-bk{width:50%; height:100%; display:inline-block; background:#000; position:absolute; left:0; top:0; z-index:-1;}
+.tab_box{width:calc(100% - 2px); height:319px; border:1px solid #999; border-top:none; position:relative;}
+.tab_01, .tab_02{width:100%; height:100%; position:absolute; left:0; top:0;}
+.activeBox{display:block; z-index:1;}
+.tab_01 ul, .tab_02 ul{width:100%; height:100%; margin:0; padding:0;}
+.tab_01 ul li, .tab_02 ul li{width:calc(25% - 20px); height:calc(100% - 20px); float:left; list-style:none; margin:10px;}
+.tab_01 ul li:nth-child(1){background:url(../img/sub-img-010.jpg) no-repeat 50% 50%; background-size:cover;}
+.tab_01 ul li:nth-child(2){background:url(../img/sub-img-011.jpg) no-repeat 50% 50%; background-size:cover;}
+.tab_01 ul li:nth-child(3){background:url(../img/sub-img-012.jpg) no-repeat 50% 50%; background-size:cover;}
+.tab_01 ul li:nth-child(4){background:url(../img/sub-img-013.jpg) no-repeat 50% 50%; background-size:cover;}
+.tab_02 ul li:nth-child(1){background:url(../img/sub-img-014.jpg) no-repeat 50% 50%; background-size:cover;}
+.tab_02 ul li:nth-child(2){background:url(../img/sub-img-015.jpg) no-repeat 50% 50%; background-size:cover;}
+.tab_02 ul li:nth-child(3){background:url(../img/sub-img-016.jpg) no-repeat 50% 50%; background-size:cover;}
+.tab_02 ul li:nth-child(4){background:url(../img/sub-img-017.jpg) no-repeat 50% 50%; background-size:cover;}
+
+
+
+#ex_06{width:800px; height:auto; margin:0 auto;}
+#ex_06>h3{font-size:24px; color:#777; margin:0; border-bottom:1px double #999;}
+#ex_06>h3>span{font-size:14px; border-left:4px solid #999; font-weight:normal; padding-left:16px; 
+		margin-left:16px; line-height:1;}
+.title{width:100%; height:auto; }
+.title>h4{margin:10px 0;}
+.title>h4>span{float:right; font-size:12px; cursor:pointer; color:#777;}
+.title>h4>span:hover{color:#ff0000;}
+
+
+#ex_07{width:800px; height:auto; margin:0 auto;}
+#ex_07>h3{font-size:24px; color:#777; margin:0; border-bottom:1px solid #999; position:relative;}
+#ex_07>h3>span{font-size:14px; font-weight:normal; padding-left:16px; margin-left:16px; line-height:1; color:#ee3535; 
+	position:absolute; right:0; bottom:0;}
+.q_box{width:100%; height:auto; border-bottom:1px solid #999;}
+.q_box h5{padding:10px 0; margin:0; cursor:pointer; font-size:14px;}
+.q_box h5:hover{background:#edefed;}
+.q_box p{width:calc(100% - 40px); margin:0px auto; padding:10px 0; border-top:1px dashed #999; font-size:13px;}
+
+
+
+#ex_08{width:800px; height:auto; margin:0 auto;}
+.per_bar_frame{width:100%; height:32px; background:#edefed; border-radius:4px; 
+	overflow:hidden; margin:8px 0 0; position:relative;}
+.per_bar{width:0; height:100%;}
+.d_01{background:#dd9900;}
+.d_02{background:#99dd00;}
+.d_03{background:#9900dd;}
+.per_title{line-height:32px; padding:0 10px; background:rgba(0,0,0,0.3); color:#fff; position:absolute; left:0px; top:0;}
+.cur_per{line-height:32px; padding:0 10px; color:#fff; position:absolute; right:10px; top:0; color:#333;}
+
+
+#ex_09{width:800px; height:600px; margin:0 auto; position:relative;}
+#ex_09 .login_btn{width:100%; height:100%; text-align:center;}
+#ex_09 .login_btn a{display:inline-block; padding:8px 20px; text-decoration:none; color:#cfcfcf; background-color:#555; 
+	cursor:pointer;}
+#ex_09 .dark-bg{width:100%; height:100%; position:fixed;  left:0; top:0; z-index:-2;}
+#ex_09 .dark-bg.active_bg{background:rgba(0,0,0,0.5);}
+#ex_09 .login-box{width:400px; height:400px; left:calc(50% - 200px); top:calc(50% - 200px); 
+	position:absolute; background:#fff; 
+	border-radius:4px; box-shadow:0 0 2px #000; display:table; z-index:2;}
+#ex_09 .login-box form{width:100%; height:100%; display:table-cell; text-align:center; vertical-align:middle; padding:20px; 
+	background:#edefed; position:relative;}
+#ex_09 .login-box form span{position:absolute; right:10px; top:10px; font-size:24px; font-weight:bold; 
+	color:#ccc; line-height:1; cursor:pointer; }
+#ex_09 .login-box form span:hover{color:#fff; text-shadow:0 0 2px #000;}
+#ex_09 .login-box form p{margin:0; padding-bottom:16px; }
+#ex_09 .login-box form p label{width:120px; display:inline-block; text-align:right; padding-right:10px; 
+	color:#777; font-size:18px;}
+#ex_09 .login-box form p input{width:200px; border:none; border-bottom:1px solid #999; 
+	font-size:18px; background:transparent;}
+#ex_09 .login-box form p input[type*='submit']{margin-top:10px; border:1px solid #eee; border-radius:4px; 
+	background:#aaaaff; color:#333; line-height:36px; cursor:pointer;}
+#ex_09 .login-box form p input[type*='submit']:hover{background:#9a9aef; color:#fff;}
