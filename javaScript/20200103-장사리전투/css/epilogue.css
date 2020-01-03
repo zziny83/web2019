@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+
+
+.epilogue{width: 100%;height: auto;}
+.epilogue .frame{width: 960px; height: auto; margin: 0 auto;}
+.epilogue .frame .ep_box{width: 100%;height: 260px; padding-top: 20px;}
+.epilogue .frame .ep_box:after{content:""; display: block;clear: both;}
+.epilogue .frame .ep_box .ep_img{width: 33.33%; height: 100%; background-size:auto 80%; background-position: 50% 50%; background-repeat: no-repeat; float: left}
+.epilogue .frame .ep_box:nth-child(1) .ep_img{background-image: url(../image/ep_top_01.png);}
+.epilogue .frame .ep_box:nth-child(2) .ep_img{background-image: url(../image/ep_top_02.png);float: right;}
+.epilogue .frame .ep_box:nth-child(3) .ep_img{background-image: url(../image/ep_top_03.png);}
+.epilogue .frame .ep_box .ep_txt{width: 66.66%; height: 100%; float: left; display: table; padding: 0 20px;}
+.epilogue .frame .ep_box .ep_txt p{display: table-cell; text-align: center; vertical-align: middle; font-size:18px;color:#71788d;}
+
+.epilogue .frame .ep_final{width: 100%; height: 360px;background: url(../image/ep_bottom.png) no-repeat 50% 50%; background-size:auto 90%; margin: 20px 0 40px;}

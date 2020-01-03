@@ -9,7 +9,7 @@ header:after, section:after, article:after, aside:after, nav:after, footer:after
 ul, ol{margin: 0; padding: 0;list-style: none;}
 h1, h2, h3, h4, h5, h6, p{margin: 0;}
 a{text-decoration:none;}
-.clear{clear: both;}
+.clear{clear: both;display: block;}
 .txt_title{font-family: 'Great Vibes', cursive, 'Josefin Slab', serif, 'Poppins', sans-serif;}
 
 
@@ -65,14 +65,21 @@ header#header_frame{width: 100%;}
 .img_fixed h2{font-family: 'Great Vibes', cursive; font-size:30px;font-weight:400;color:#fff;}
 .img_fixed p{font-size:16px; font-weight:400;color:#fff;}
 
-.menu_gallery{width: 1200px; height: auto; padding: 40px 10px; margin: 0 auto;}
+.menu_gallery{width: 1200px; height: auto; padding: 40px 10px; margin:0 auto;}
 .menu_gallery:after{content: ""; display: block; clear: both;}
-.menu_gallery .cont2{ text-align: center; font-size:0;}
-.cont2>div{display: inline-block; width:33.33%;}
-.cont2 .menu2_cont-01{margin-left: 200px;height: 240px; background: #fff url(../images/h-img12.jpg) no-repeat 0 50%; } 
-.cont2 .menu2_cont-02{height: 240px; background: #fff url(../images/h-img12.jpg) no-repeat 0 50%;} 
-.cont2 .menu2_cont-03{height: 240px; background: #fff url(../images/h-img12.jpg) no-repeat 0 50%;} 
-.cont2 .menu2_cont-04{height: 240px; background: #fff url(../images/h-img12.jpg) no-repeat 0 50%;} 
-.cont2 .menu2_cont-05{height: 240px; background: #fff url(../images/h-img12.jpg) no-repeat 0 50%;} 
+.menu_gallery .cont2{text-align: center; font-size:0;}
+.cont2>div{display: inline-block; width:calc(33.33% - 20px); margin:0 10px 20px; background-position: 50% 50%; background-size:cover; background-repeat: no-repeat;}
+.cont2 .menu2_cont-01{_margin-left: 190px; height: 240px; background-image:url(../images/h-img12.jpg) } 
+.cont2 .menu2_cont-02{height: 240px; background-image: url(../images/h-img13.jpg)} 
+.cont2 .menu2_cont-03{height: 240px; background-image: url(../images/h3-bacground-img-4-1.jpg)} 
+.cont2 .menu2_cont-04{height: 240px; background-image: url(../images/h-img14.jpg)} 
+.cont2 .menu2_cont-05{height: 240px; background-image: url(../images/h-img16.jpg)} 
+
+
+.menu_review{width: 100%; height: auto; background: url(../images/h-img23.jpg) no-repeat 50% 50%;}
+.menu_review .menu_bg{background-color: rgba(0,0,0,0.5); height: auto;}
+.menu_review .review{width: 1200px;height: 550px;margin:0 auto; display:flex; flex-direction:row;}
+.review .sec_title{color:#fff;}
+.review .sec_title h2{border-left:3px solid #fff;} 
 
 

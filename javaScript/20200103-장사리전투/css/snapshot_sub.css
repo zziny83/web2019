@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+
+.sp_box2{width: 50%;height: 300px; padding: 20px 10px 0; float: left;}
+.sp_box2 .sp_box_img{width: 100%;height: 100%; background-size:cover; background-position: 50% 50%;}
+.sp_box2:nth-child(1) .sp_box_img{background-image: url(../image/cont_07.jpg);}
+.sp_box2:nth-child(2) .sp_box_img{background-image: url(../image/cont_08.jpg);}
+.sp_box2:nth-child(3) .sp_box_img{background-image: url(../image/cont_09.jpg);}
+.sp_box2:nth-child(4) .sp_box_img{background-image: url(../image/cont_10.jpg);}
+.sp_box2:nth-child(5) .sp_box_img{background-image: url(../image/cont_11.jpg);}
+.sp_box2:nth-child(6) .sp_box_img{background-image: url(../image/cont_12.jpg);}
+.sp_box2:nth-child(7) .sp_box_img{background-image: url(../image/cont_13.jpg);}
+.sp_box2:nth-child(8) .sp_box_img{background-image: url(../image/cont_14.jpg);}

@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+
+.coverstory{width: 100%; height: auto;}
+.coverstory .cover_img{width: 25%; height: 400px; background-size:cover; 
+	background-position: 50% 50%; background-repeat: no-repeat; float: left;}
+.coverstory .img_01{height: 800px; background-image: url(../image/cont_05.jpg);}
+.coverstory .img_02{background-image: url(../image/cont_01.jpg);}
+.coverstory .img_03{width: 50%; background-image: url(../image/cont_10.jpg);}
+.coverstory .img_04{background-image: url(../image/cont_11.jpg);}
+.coverstory .img_05{background-image: url(../image/cont_02.jpg);}
+.coverstory .img_06{background-image: url(../image/cont_09.jpg);}
+.coverstory .img_07{background-image: url(../image/cont_04.jpg);}
+.coverstory .img_08{width: 50%; background-image: url(../image/cont_12.jpg);}
+.coverstory .img_09{background-image: url(../image/cont_08.jpg);}

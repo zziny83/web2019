@@ -129,17 +129,26 @@ $(document).ready(function(){
 반대로 "X" 버튼 클릭 또는 암막 클릭시 로그인 박스가 사라지도록 구성.
 */
 	$(".login-box").hide();
-	$(".login_btn").click(function(){
-		$(".popup_bg").addClass("active");
-		$(".popup_frame").addClass("active");
+	$(".op_btn").click(function(){
+		$(".dark-bg").addClass("active_bg");
+		$(".login-box").show();
 		return false;
 	});
 
-	$(".popup_bg, .close").click(function(){
-		$(".popup_bg").removeClass("active");
-		$(".popup_frame").removeClass("active");
-		return false;
+	$(".dark-bg, .cls_btn").click(function(){
+		$(".dark-bg").removeClass("active_bg");
+		$(".login-box").hide();
+
 	});
+
+// 로그인
+// 실습10. 팝업 만들기. 로그인 버튼을 클릭하면 로그인 박스가 나오도록 구성. 반대로 "X" 버튼 클릭 또는 암막 클릭시 로그인 박스가 사라지도록 구성.
+// 회원가입 버튼을 클릭하면 회원가입 박스가 나오도록 구성. 반대로 "X" 버튼 클릭 또는 암막 클릭시 회원가입 박스가 사라지도록 구성.
+// 로그인 박스 내부에 하단 문단 클릭시 회원가입창으로 교차되도록 구성. 회원가입에서 로그인 교차방식은 문단 좌동.
+
+
+
+
 
 
 

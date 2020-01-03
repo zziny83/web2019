@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+*{-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+html, body{margin: 0;padding: 0;}
+header, section, article, aside, nav, footer{display: block;}
+header:after, section:after, article:after, aside:after, nav:after, footer:after{content:""; display: block;clear: both;}
+ul, ol{margin: 0;padding: 0;list-style: none;}
+h1, h2, h3, h4, h5, h6, p{margin: 0;}
+a{text-decoration: none;}
+.clear{clear: both;}
+
+#header{width: 100%; height: 100vh; position: relative; overflow: hidden;}
+#header .movie-space{position: absolute; width: 160%; height: 160%; top:50%; left:50%;  transform: translate(-50%, -50%);}
+#header .dark-bg{position: absolute; width: 100%;height: 100%; top:0; left:0; background: url(../image/dot_pattern.png);}
+#header .dark-bg .main-title-space{width: 100%;height: 100%; position: relative;}
+#header .dark-bg .main-title-space img{ position: absolute; bottom: 200px; left:50%; transform: translate(-50%, 0);}
+
+#header nav{position: absolute; bottom: 0; left:0; width: 100%; height: 100px; background: #1f232f;}
+#header nav .frame{width: 100%; height: 100%; text-align: center;}
+#header nav .frame ul{font-size:0;}
+#header nav .frame ul li{display: inline-block;}
+#header nav .frame ul li a{display: block; width: 192px; font-size: 18px; line-height: 1; padding:41px 0 37px; border-bottom: 4px solid transparent; color:#71788d;}
+#header nav .frame ul li.active a, #header nav .frame ul li:hover a{color:#fff; border-bottom: 4px solid #fff;}
+
+#content{width: 100%; height: auto; background: #fff; }
+/*ajax 형태로 들어오는 콘텐츠의 양이 서로 다르기 때문에 height: auto; 설정 */
+#footer{width: 100%; height: 60px; background: #191919;}
+#footer p{text-align: center; font-size: 16px; color:#71788d; line-height:60px;}

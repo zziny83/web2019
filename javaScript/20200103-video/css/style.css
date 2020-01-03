@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+*{-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+
+
+
+.accordian-box{width: 100%; height: 300px; overflow: hidden;}
+.sp-box{width: 25%; height: 100%; float: left; transition: width 0.5s;}
+.sp-box:nth-child(1){background-color: #aaffaa;}
+.sp-box:nth-child(2){background-color: #aaaaff;}
+.sp-box:nth-child(3){background-color: #ffaaaa;}
+.sp-box:nth-child(4){background-color: #aaffff;}
+
+.video{width: 100%;}
+video{width: 100%; height: 100%;}

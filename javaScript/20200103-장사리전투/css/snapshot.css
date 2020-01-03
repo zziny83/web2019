@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+
+.snapshot{width: 100%;height: auto;}
+.snapshot .frame{width: 960px; height: auto; margin: 0 auto; padding-bottom:20px;}
+.snapshot .frame .sp_first{width: 100%; height: auto;}
+.snapshot .frame .sp_first:after{content:""; display: block;clear: both;}
+.snapshot .frame .sp_first .sp_box{width: 50%;height: 300px; padding: 20px 10px 0; float: left;}
+.snapshot .frame .sp_first .sp_box .sp_box_img{width: 100%;height: 100%; background-size:cover; background-position: 50% 50%;}
+.snapshot .frame .sp_first .sp_box:nth-child(1) .sp_box_img{background-image: url(../image/cont_01.jpg);}
+.snapshot .frame .sp_first .sp_box:nth-child(2) .sp_box_img{background-image: url(../image/cont_02.jpg);}
+.snapshot .frame .sp_first .sp_box:nth-child(3) .sp_box_img{background-image: url(../image/cont_03.jpg);}
+.snapshot .frame .sp_first .sp_box:nth-child(4) .sp_box_img{background-image: url(../image/cont_04.jpg);}
+.snapshot .frame .sp_first .sp_box:nth-child(5) .sp_box_img{background-image: url(../image/cont_05.jpg);}
+.snapshot .frame .sp_first .sp_box:nth-child(6) .sp_box_img{background-image: url(../image/cont_06.jpg);}
+
+.snapshot .frame .more_frame{width: 100%; height:auto; text-align: center; padding: 20px 0;}
+.snapshot .frame .more_frame button{width: 192px; height: 40px; background: #71788d; color:#fff; border-radius: 4px; border: none; font-size:18px; cursor: pointer;}
+.snapshot .frame .sp_second{display: none;}
+.snapshot .frame .sp_second:after{content:""; display: block;clear: both;}
