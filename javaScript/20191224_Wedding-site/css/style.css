@@ -78,8 +78,8 @@ header#header_frame{width: 100%;}
 
 .menu_review{width: 100%; height: auto; background: url(../images/h-img23.jpg) no-repeat 50% 50%;}
 .menu_review .menu_bg{background-color: rgba(0,0,0,0.5); height: auto;}
-.menu_review .review{width: 1200px;height: 550px;margin:0 auto; display:flex; flex-direction:row;}
+.menu_review .review{width: 1200px;height: 550px;margin:0 auto;}
 .review .sec_title{color:#fff;}
-.review .sec_title h2{border-left:3px solid #fff;} 
+.review .sec_title h2{border-left:3px solid #fff;margin-top: -23px;  } 
 
 
