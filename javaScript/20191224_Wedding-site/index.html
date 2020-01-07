@@ -5,6 +5,8 @@
 		<meta charset="UTF-8">
 		<title>wedding site</title>
 		<link rel="stylesheet" href="css/style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="js/script.js"></script>
 	</head>
 	<body>
 		<header>
@@ -25,11 +27,11 @@
 					<div class="main_img">
 						<div class="menuBar">
 							<ul>
-								<li><a href="#">CONCEPT</a></li>
-								<li><a href="#">GALLERY</a></li>
+								<li rel="concept"><a href="#">CONCEPT</a></li>
+								<li rel="gallery"><a href="#">GALLERY</a></li>
 								<li><a href="#">LOGO</a></li>
-								<li><a href="#">REVIEW</a></li>
-								<li><a href="#">BLOG</a></li>
+								<li rel="review"><a href="#">REVIEW</a></li>
+								<li rel="blog"><a href="#">BLOG</a></li>
 							</ul>
 						</div>
 					</div>
@@ -178,34 +180,42 @@
 					<h1>Wedding Invitation</h1>
 					<div class="line"></div>
 					<p>Please reply and indicate whether you will be able to attend</p>
-					<div>
+					<div class="input">
 						<input type="text" id="user-name" placeholder="NAME" name="userid" required class="inp-field">
 					</div>
-					<div>
+					<div class="input">
 						<input type="text" id="user-id" placeholder="EMAIL" name="userid" required class="inp-field">
 					</div>
-					<div>
+					<div class="input">
 						<input type="text" id="user-number" placeholder="PHONE" name="userid" required class="inp-field">
 					</div>
-					<button></button>
+					<button>RESERVATION</button>
 				</div>
 			</div>	
 			<div class="banner_02 partners">
-				<h2>PARTNERS</h2>
-				<div class="partners-01"></div>
-				<div class="partners-02"></div>
-				<div class="partners-03"></div>
-				<div class="partners-04"></div>
-				<div class="partners-05"></div>
+				<div class="sec_title"><h2>PARTNERS</h2></div>
+				<div class="partners">
+					<ul>
+						<li><a href=""></a></li>
+						<li><a href=""></a></li>
+						<li><a href=""></a></li>
+						<li><a href=""></a></li>
+						<li><a href=""></a></li>
+					</ul>
+				</div>
+				
 			</div>
 		</section>
 		<footer>
 			<div class="footer_info">
-				<div class="ft_left"></div>
-				<p>COPYRIGHTS ⓒ AIRLE. ALL RIGHTS RESERVED</p>
-				<div class="ft_right"></div>
+				<div class="ft_wrap">
+					<div class="ft_left"></div>
+					<p>COPYRIGHTS ⓒ AIRLE. ALL RIGHTS RESERVED</p>
+					<div class="ft_right"></div>
+				</div>
 			</div>
 		</footer>
+		<a class="topBtn" href=""><img src="images/top_btn.svg" alt=""></a>
 		
 	</body>
 </html>
