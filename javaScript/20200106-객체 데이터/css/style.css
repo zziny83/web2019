@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+*{-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+html, body{margin: 0;padding: 0;}
+header, section, article, aside, nav, footer{display: block;}
+header:after, section:after, article:after, aside:after, nav:after, footer:after{content:""; display: block;clear: both;}
+ul, ol{margin: 0;padding: 0;list-style: none;}
+h1, h2, h3, h4, h5, h6, p{margin: 0;}
+a{text-decoration: none;}
+.clear{clear: both;}
+
+#ex_04{width: 600px; height: 224px;margin: 0 auto;}
+#ex_04
+
+#ex_05{width: 600px; height: 224px;margin: 0 auto;}
+#ex_05 ul{width: 100%;height: 100%;margin: 0;padding: 0;}
+#ex_05 ul li{width: 200px;height: 100%;float: left; list-style: none; padding: 0 5px; box-sizing: border-box;}
+#ex_05 ul li .img{width: 100%; height: 200px; float: left; list-style: none; background-size: cover;}
+#ex_05 ul li .title{font-size:18px; font-weight: bold; text-align: center; margin: 0;}
+
+
+
+#ex_02{width:800px; height:800px; margin:0 auto;}  
+#ex_02 .logo{width:100%; height:200px; margin:0; padding:0; font-size:0;}  
+#ex_02 .logo li{width:50%; height:100%; list-style:none; display:inline-block; background-size:cover; cursor:pointer;}  
+#ex_02 .animation-p, #ex_02 .animation-d{width:100%; height:200px; margin:0; padding:0; font-size:0; display:none;}  
+#ex_02 .animation-p li, #ex_02 .animation-d li{width:33.33%; height:200px; list-style:none;display:inline-block; background-size:cover; cursor:pointer;}  
+#ex_02 .sub-box .active{display:block;} 
+
+
+#ex_07{width:800px; height:400px; margin:0 auto;}
+#ex_07 .img-chk{width:100%; height:40px;}
+#ex_07 .img-chk ul{margin:0; padding:0; text-align:center;}
+#ex_07 .img-chk ul li{display:inline-block; margin:0 10px;}
+#ex_07 .img-chk ul li input{width:16px; height:16px; border-radius:2px;}
+#ex_07 p{text-align:center;}
+#ex_07 p button{width:80px; height:32px;}
+#ex_07 .img-group{width:100%; height:auto; font-size:0; text-align:center;}
+#ex_07 .img-group div[class^="img-box-"]{box-sizing:border-box; width:50%; height:100%; display:inline-block; overflow:hidden; display:none;}
+#ex_07 .img-group img{width:100%; height:320px;}
+#ex_07 .img-group p{text-align:center; margin:0; padding:8px 0 0; font-size:16px;}
+
+
+
+#ex_08{width:800px; height:auto; margin:0 auto;}
+#ex_08 .section_sel{box-sizing:border-box; width:100%; height:240px; background:#edefed; padding:20px;}
+#ex_08 div[class^="category_"]{width:100%; height:70px; text-align:center;}
+#ex_08 p{font-size:14px; margin:0;}
+#ex_08 p.title{display:block; text-align:left; border-bottom:1px solid #999;}
+#ex_08 p.input-box{display:inline-block; margin:10px 20px;}
+#ex_08 input{ height:auto; border:none; border-bottom:1px solid #777; padding:0 10px; font-size:16px;}
+#ex_08 button{width:120px; height:40px; background:#cfcfcf; border:none;}
+#ex_08 .img-txt{text-align:center; background:#aaffff; display:none; padding:20px;}
+
+#ex_08 .img-box{width:100%; height:auto; text-align:center; font-size:0;}
+#ex_08 .img-cont{width:25%; height:200px; display:inline-block; overflow:hidden;}
+#ex_08 .img-cont p{font-size:16px; text-shadow:0 0 2px #000; color:#fff;}
+
+#ex_08 .img-box .img-cont:nth-child(1){background:url(../img/img-01.jpg) no-repeat 50% 50%; background-size:cover;}
+#ex_08 .img-box .img-cont:nth-child(2){background:url(../img/img-02.jpg) no-repeat 50% 50%; background-size:cover;}
+#ex_08 .img-box .img-cont:nth-child(3){background:url(../img/img-03.jpg) no-repeat 50% 50%; background-size:cover;}
+#ex_08 .img-box .img-cont:nth-child(4){background:url(../img/img-04.jpg) no-repeat 50% 50%; background-size:cover;}
+#ex_08 .img-box .img-cont:nth-child(5){background:url(../img/img-05.jpg) no-repeat 50% 50%; background-size:cover;}
+#ex_08 .img-box .img-cont:nth-child(6){background:url(../img/img-06.jpg) no-repeat 50% 50%; background-size:cover;}
+#ex_08 .img-box .img-cont:nth-child(7){background:url(../img/img-07.jpg) no-repeat 50% 50%; background-size:cover;}
+#ex_08 .img-box .img-cont:nth-child(8){background:url(../img/img-08.jpg) no-repeat 50% 50%; background-size:cover;}
+#ex_08 .img-box .img-cont:nth-child(9){background:url(../img/img-09.jpg) no-repeat 50% 50%; background-size:cover;}
+#ex_08 .img-box .img-cont:nth-child(10){background:url(../img/img-11.jpg) no-repeat 50% 50%; background-size:cover;}
+#ex_08 .img-box .img-cont:nth-child(11){background:url(../img/img-12.jpg) no-repeat 50% 50%; background-size:cover;}
+#ex_08 .img-box .img-cont:nth-child(12){background:url(../img/img-13.jpg) no-repeat 50% 50%; background-size:cover;}

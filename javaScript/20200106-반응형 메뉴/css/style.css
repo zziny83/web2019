@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+*{-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+html, body{margin: 0;padding: 0;}
+header, section, article, aside, nav, footer{display: block;}
+header:after, section:after, article:after, aside:after, nav:after, footer:after{content:""; display: block;clear: both;}
+ul, ol{margin: 0;padding: 0;list-style: none;}
+h1, h2, h3, h4, h5, h6, p{margin: 0;}
+a{text-decoration: none;}
+.clear{clear: both;}
+
+#ex_01{width: 377px; height: 640px; border:1px solid #000; background: #ddd; overflow: hidden;}
+#ex_01 .top{width: 100%; height: 60px;position: relative; background: #fff;}
+#ex_01 .top .res_btn{position: absolute;top:10px; left:10px;}
+#ex_01 .top .res_btn a{display: block; line-height: 40px; font-size:36px; color:#000;}
+#ex_01 .top .logo{text-align: center;}
+#ex_01 .top .logo a{display: block;}
+#ex_01 .top .logo a img{height: 50px; margin-top:5px;}
+
+#ex_01 .top .menu{width: 100%; height: auto; background: #000; display: none;}
+#ex_01 .top .menu ul{width: 100%; height: auto; padding: 10px;}
+#ex_01 .top .menu ul li{}
+#ex_01 .top .menu ul li a{display: block; line-height: 32px; border-bottom: 1px solid #ededed; color:#fff; font-size:17px;}
+#ex_01 .top .menu ul li:last-child a{border: none;}
+
+#ex_01 .top .menu ul li:hover a{color:#ffffaa;}
+
+#ex_01 .main_cont{width: 100%; height: 580px; background:url(../img/event-01.jpg) no-repeat 50% 50%; background-size: cover;}
+
+
+
+#ex_02{width: 377px; height: 640px; border:1px solid #000; background: #ddd; overflow: hidden; position: relative;}
+#ex_02 .top{width: 100%; height: 60px; background: #fff;}
+#ex_02 .top .res_btn{position: absolute;top:10px; left:10px;}
+#ex_02 .top .res_btn a{display: block; line-height: 40px; font-size:36px; color:#000;}
+#ex_02 .top .logo{text-align: center;}
+#ex_02 .top .logo a{display: block;}
+#ex_02 .top .logo a img{height: 50px; margin-top:5px;}
+
+#ex_02 .top .menu .close_btn{background: transparent; border: none; font-size:40px; float: right; color:#fff; font-weight: bold; cursor: pointer;}
+
+#ex_02 .top .menu{width: 100%; height: 100%; background: #000; position: absolute; top:0; left:0; display: none;}
+#ex_02 .top .menu ul{width: 100%; height: auto; padding: 10px;}
+#ex_02 .top .menu ul li{}
+#ex_02 .top .menu ul li a{display: block; line-height: 32px; border-bottom: 1px solid #ededed; color:#fff; font-size:17px;}
+#ex_02 .top .menu ul li:last-child a{border: none;}
+
+#ex_02 .top .menu ul li:hover a{color:#ffffaa;}
+
+#ex_02 .main_cont{width: 100%; height: 580px; background:url(../img/event-01.jpg) no-repeat 50% 50%; background-size: cover;}
+
+
+
+
+#ex_03{width: 377px; height: 640px; border:1px solid #000; background: #ddd; overflow: hidden; position: relative;}
+#ex_03 .top{width: 100%; height: 60px; background: #fff;}
+#ex_03 .top .res_btn{position: absolute;top:10px; left:10px;}
+#ex_03 .top .res_btn a{display: block; line-height: 40px; font-size:36px; color:#000;}
+#ex_03 .top .logo{text-align: center;}
+#ex_03 .top .logo a{display: block;}
+#ex_03 .top .logo a img{height: 50px; margin-top:5px;}
+
+#ex_03 .top .menu .close_btn{background: transparent; border: none; font-size:40px; float: right; color:#fff; font-weight: bold; cursor: pointer;}
+
+#ex_03 .top .menu{width: 100%; height: 100%; background: #000; position: absolute; top:0; left:-100%;}
+#ex_03 .top .menu ul{width: 100%; height: auto; padding: 10px;}
+#ex_03 .top .menu ul li{}
+#ex_03 .top .menu ul li a{display: block; line-height: 32px; border-bottom: 1px solid #ededed; color:#fff; font-size:17px;}
+#ex_03 .top .menu ul li:last-child a{border: none;}
+
+#ex_03 .top .menu ul li:hover a{color:#ffffaa;}
+
+#ex_03 .main_cont{width: 100%; height: 580px; background:url(../img/event-01.jpg) no-repeat 50% 50%; background-size: cover;}
+
+
+
+#ex_04{width: 377px; height: 640px; border:1px solid #000; background: #ddd; overflow: hidden; position: relative;}
+#ex_04 .top{width: 100%; height: 60px; background: #fff;}
+#ex_04 .top .res_btn{position: absolute;top:10px; left:10px;}
+#ex_04 .top .res_btn a{display: block; line-height: 40px; font-size:36px; color:#000;}
+#ex_04 .top .logo{text-align: center;}
+#ex_04 .top .logo a{display: block;}
+#ex_04 .top .logo a img{height: 50px; margin-top:5px;}
+
+#ex_04 .top .menu .close_btn{background: transparent; border: none; font-size:40px; float: right; color:#fff; font-weight: bold; cursor: pointer;}
+
+#ex_04 .top .menu{width: 100%; height: 100%; background: #000; position: absolute; top:0; left:0; z-index: -1; opacity:0; transition: opacity 0.5s;}
+#ex_04 .top .menu.active{z-index: 1; opacity:1;}
+#ex_04 .top .menu ul{width: 100%; height: auto; padding: 10px;}
+#ex_04 .top .menu ul li{}
+#ex_04 .top .menu ul li a{display: block; line-height: 32px; border-bottom: 1px solid #ededed; color:#fff; font-size:17px;}
+#ex_04 .top .menu ul li:last-child a{border: none;}
+
+#ex_04 .top .menu ul li:hover a{color:#ffffaa;}
+
+#ex_04 .main_cont{width: 100%; height: 580px; background:url(../img/event-01.jpg) no-repeat 50% 50%; background-size: cover;}

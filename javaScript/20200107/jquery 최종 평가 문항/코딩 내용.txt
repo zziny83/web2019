@@ -1,0 +1,70 @@
+
+#1. 문항
+	<div id="test_01">
+		<ul class="menu">
+		</ul>
+	</div>
+
+#2. 문항
+		
+	<div id="test_02">
+		<div class="tab_btn">
+			<div id="tab_01" class="activeBtn"></div>
+			<div id="tab_02"></div>
+			<div id="tab_03"></div>
+			<span class="bg-bk"></span>
+		</div>
+		<div class="tab_box">
+			<div class="tab_01 activeBox">
+				<div class="img"></div>
+				<div class="context">
+					<div class="table_center">
+						<h4 class="title"></h4>
+						<h6 class="sub"></h6>
+						<p class="text"></p>
+					</div>
+				</div>
+			</div>
+			<div class="tab_02">
+				<div class="img"></div>
+				<div class="context">
+					<div class="table_center">
+						<h4 class="title"></h4>
+						<h6 class="sub"></h6>
+						<p class="text"></p>
+					</div>
+				</div>
+			</div>
+			<div class="tab_03">
+				<div class="img"></div>
+				<div class="context">
+					<div class="table_center">
+						<h4 class="title"></h4>
+						<h6 class="sub"></h6>
+						<p class="text"></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+#3. 문항
+
+	<div id="test_03">
+		<ul class="slider">
+			<li class="act_img" data-rel="img-01" ><a href="#"></a></li>
+			<li data-rel="img-02"><a href="#"></a></li>
+			<li data-rel="img-03"><a href="#"></a></li>
+			<li data-rel="img-04"><a href="#"></a></li>
+		</ul>
+		<div class="pager">
+			<ol class="slide_num">
+				<li class="no_01 act_btn" rel="img-01"></li>
+				<li class="no_02" rel="img-02"></li>
+				<li class="no_03" rel="img-03"></li>
+				<li class="no_04" rel="img-04"></li>
+			</ol>
+		</div>
+	</div>
